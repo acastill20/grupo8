@@ -1,0 +1,36 @@
+ALTER USER grupo8 ENCRYPTED PASSWORD 'beatillo';
+SELECT * FROM compartimientos;
+DROP TABLE IF EXISTS Comunas_Unidades;
+CREATE TABLE Comunas_Unidades(uid INT, comuna VARCHAR(100));
+\dt
+\COPY Unidades from Unidades.csv DELIMITER ',' CSV HEADER;
+SELECT * FROM Unidades;
+SELECT * FROM Vehicles;
+SELECT * FROM Vehiculos;
+SELECT * FROM Personal;
+DROP IF EXISTS Personal;
+DROP TABLE IF EXISTS personal;
+CREATE TABLE personal(pid INT Primary KEY, nombre VARCHAR(100), sexo VARCHAR(100), edad INT, tipopersonal VARCHAR(100));
+DROP TABLE IF EXISTS Vehiculos;
+CREATE TABLE VehiculosPatente(vid INT PRIMARY KEY, patente INT);
+CREATE TABLE VehiculosTipo(vid INT PRIMARY KEY, tipo VARCHAR(100));
+CREATE TABLE Vehiculos(vid INT, uid INT, estado VARCHAR(100), PRIMARY KEY(vid, uid));
+\dt
+SELECT * FROM vehiculosfrescos;
+SELECT * FROM vehiculoscarga;
+SELECT * FROM vehiculosfrios;
+SELECT * FROM compartimientos;
+\dt
+q;
+\q
+CREATE TABLE UnidadesComunas(uid INT, comuna VARCHAR(100), PRIMARY KEY(uid,comuna));
+CREATE TABLE Vehiculos(vid INT PRIMARY KEY, estado VARCHAR(100), uid INT);
+CREATE TABLE VehiculosLicencia(vid INT PRIMARY KEY, licencia VARCHAR(100));
+CREATE TABLE VehiculosCarga(vid INT PRIMARY KEY, volumen FLOAT, cargamax FLOAT);
+CREATE TABLE VehiculosPatente(vid INT PRIMARY KEY, patente VARCHAR(100));
+CREATE TABLE VehiculosFrescos(vid INT PRIMARY KEY, alcance FLOAT);
+CREATE TABLE VehiculosFrios(vid INT PRIMARY KEY, n_compartimientos FLOAT, capacidad_compartimientos FLOAT);
+CREATE TABLE Despachos(did INT PRIMARY KEY, fecha DATE, origen INT,destino INT, vid INT, pid INT);
+CREATE TABLE DespachosCompra(did INT, id_compra INT, PRIMARY KEY(did, id_compra));
+CREATE TABLE Personal(pid INT PRIMARY KEY, nombre VARCHAR(100), sexo VARCHAR(100), edad INT, tipo_licencia VARCHAR(100));
+\COPY PersonalRepartidor from PersonalRepartidor.csv DELIMITER ',' CSV HEADER;

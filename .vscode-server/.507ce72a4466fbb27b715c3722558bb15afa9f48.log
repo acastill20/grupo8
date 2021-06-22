@@ -1,0 +1,314 @@
+
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+Extension host agent listening on 37379
+
+[14:39:47] Extension host agent started.
+[14:39:47] [127.0.0.1][1c5b8981][ManagementConnection] New connection established.
+[14:39:47] [127.0.0.1][9db23586][ExtensionHostConnection] New connection established.
+[14:39:48] [127.0.0.1][9db23586][ExtensionHostConnection] <1284> Launched Extension Host Process.
+[14:39:48] *
+[14:39:48] baseEnv {
+  MAIL: '/var/mail/grupo8',
+  USER: 'grupo8',
+  SSH_CLIENT: '200.28.178.163 56017 22',
+  LANGUAGE: 'en_US:en',
+  SHLVL: '3',
+  HOME: '/home/grupo8',
+  LOGNAME: 'grupo8',
+  _: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/node',
+  XDG_SESSION_ID: '12275',
+  PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
+  VSCODE_AGENT_FOLDER: '/home/grupo8/.vscode-server',
+  XDG_RUNTIME_DIR: '/run/user/1132',
+  LANG: 'en_US.UTF-8',
+  SHELL: '/bin/bash',
+  PWD: '/home/grupo8',
+  SSH_CONNECTION: '200.28.178.163 56017 146.155.13.72 22',
+  VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/remote/node_modules',
+  VSCODE_CWD: '/home/grupo8',
+  LS_COLORS: '',
+  LESSCLOSE: '/usr/bin/lesspipe %s %s',
+  S_COLORS: 'auto',
+  XDG_DATA_DIRS: '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+  LESSOPEN: '| /usr/bin/lesspipe %s',
+  VSCODE_LOG_NATIVE: 'false',
+  VSCODE_AMD_ENTRYPOINT: 'vs/server/remoteExtensionHostProcess',
+  VSCODE_PIPE_LOGGING: 'true',
+  VSCODE_VERBOSE_LOGGING: 'true',
+  VSCODE_EXTHOST_WILL_SEND_SOCKET: 'true',
+  VSCODE_HANDLES_UNCAUGHT_ERRORS: 'true',
+  VSCODE_LOG_STACK: 'false',
+  VSCODE_NLS_CONFIG: '{"locale":"en","availableLanguages":{}}',
+  BROWSER: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin/helpers/browser.sh'
+}
+[14:39:56] *
+[14:39:56] baseEnv {
+  MAIL: '/var/mail/grupo8',
+  USER: 'grupo8',
+  SSH_CLIENT: '200.28.178.163 56017 22',
+  LANGUAGE: 'en_US:en',
+  SHLVL: '3',
+  HOME: '/home/grupo8',
+  LOGNAME: 'grupo8',
+  _: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/node',
+  XDG_SESSION_ID: '12275',
+  PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
+  VSCODE_AGENT_FOLDER: '/home/grupo8/.vscode-server',
+  XDG_RUNTIME_DIR: '/run/user/1132',
+  LANG: 'en_US.UTF-8',
+  SHELL: '/bin/bash',
+  PWD: '/home/grupo8',
+  SSH_CONNECTION: '200.28.178.163 56017 146.155.13.72 22',
+  VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/remote/node_modules',
+  VSCODE_CWD: '/home/grupo8',
+  LS_COLORS: '',
+  LESSCLOSE: '/usr/bin/lesspipe %s %s',
+  S_COLORS: 'auto',
+  XDG_DATA_DIRS: '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+  LESSOPEN: '| /usr/bin/lesspipe %s',
+  VSCODE_LOG_NATIVE: 'false',
+  VSCODE_AMD_ENTRYPOINT: 'vs/server/remoteExtensionHostProcess',
+  VSCODE_PIPE_LOGGING: 'true',
+  VSCODE_VERBOSE_LOGGING: 'true',
+  VSCODE_EXTHOST_WILL_SEND_SOCKET: 'true',
+  VSCODE_HANDLES_UNCAUGHT_ERRORS: 'true',
+  VSCODE_LOG_STACK: 'false',
+  VSCODE_NLS_CONFIG: '{"locale":"en","availableLanguages":{}}',
+  BROWSER: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin/helpers/browser.sh'
+}
+[14:40:03] *
+[14:40:03] baseEnv {
+  MAIL: '/var/mail/grupo8',
+  USER: 'grupo8',
+  SSH_CLIENT: '200.28.178.163 56017 22',
+  LANGUAGE: 'en_US:en',
+  SHLVL: '3',
+  HOME: '/home/grupo8',
+  LOGNAME: 'grupo8',
+  _: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/node',
+  XDG_SESSION_ID: '12275',
+  PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
+  VSCODE_AGENT_FOLDER: '/home/grupo8/.vscode-server',
+  XDG_RUNTIME_DIR: '/run/user/1132',
+  LANG: 'en_US.UTF-8',
+  SHELL: '/bin/bash',
+  PWD: '/home/grupo8',
+  SSH_CONNECTION: '200.28.178.163 56017 146.155.13.72 22',
+  VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/remote/node_modules',
+  VSCODE_CWD: '/home/grupo8',
+  LS_COLORS: '',
+  LESSCLOSE: '/usr/bin/lesspipe %s %s',
+  S_COLORS: 'auto',
+  XDG_DATA_DIRS: '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+  LESSOPEN: '| /usr/bin/lesspipe %s',
+  VSCODE_LOG_NATIVE: 'false',
+  VSCODE_AMD_ENTRYPOINT: 'vs/server/remoteExtensionHostProcess',
+  VSCODE_PIPE_LOGGING: 'true',
+  VSCODE_VERBOSE_LOGGING: 'true',
+  VSCODE_EXTHOST_WILL_SEND_SOCKET: 'true',
+  VSCODE_HANDLES_UNCAUGHT_ERRORS: 'true',
+  VSCODE_LOG_STACK: 'false',
+  VSCODE_NLS_CONFIG: '{"locale":"en","availableLanguages":{}}',
+  BROWSER: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin/helpers/browser.sh'
+}
+[14:40:11] *
+[14:40:11] baseEnv {
+  MAIL: '/var/mail/grupo8',
+  USER: 'grupo8',
+  SSH_CLIENT: '200.28.178.163 56017 22',
+  LANGUAGE: 'en_US:en',
+  SHLVL: '3',
+  HOME: '/home/grupo8',
+  LOGNAME: 'grupo8',
+  _: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/node',
+  XDG_SESSION_ID: '12275',
+  PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
+  VSCODE_AGENT_FOLDER: '/home/grupo8/.vscode-server',
+  XDG_RUNTIME_DIR: '/run/user/1132',
+  LANG: 'en_US.UTF-8',
+  SHELL: '/bin/bash',
+  PWD: '/home/grupo8',
+  SSH_CONNECTION: '200.28.178.163 56017 146.155.13.72 22',
+  VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/remote/node_modules',
+  VSCODE_CWD: '/home/grupo8',
+  LS_COLORS: '',
+  LESSCLOSE: '/usr/bin/lesspipe %s %s',
+  S_COLORS: 'auto',
+  XDG_DATA_DIRS: '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+  LESSOPEN: '| /usr/bin/lesspipe %s',
+  VSCODE_LOG_NATIVE: 'false',
+  VSCODE_AMD_ENTRYPOINT: 'vs/server/remoteExtensionHostProcess',
+  VSCODE_PIPE_LOGGING: 'true',
+  VSCODE_VERBOSE_LOGGING: 'true',
+  VSCODE_EXTHOST_WILL_SEND_SOCKET: 'true',
+  VSCODE_HANDLES_UNCAUGHT_ERRORS: 'true',
+  VSCODE_LOG_STACK: 'false',
+  VSCODE_NLS_CONFIG: '{"locale":"en","availableLanguages":{}}',
+  BROWSER: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin/helpers/browser.sh'
+}
+[16:07:16] [127.0.0.1][1c5b8981][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[16:07:17] [127.0.0.1][9db23586][ExtensionHostConnection] <1284> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[16:07:17] Last EH closed, waiting before shutting down
+Got delay-shutdown request while in shutdown timeout, delaying
+[16:07:55] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[16:07:55] Cancelling previous shutdown timeout
+[16:07:55] [127.0.0.1][e3203e2f][ManagementConnection] New connection established.
+[16:07:55] [127.0.0.1][aa9bf8e5][ExtensionHostConnection] New connection established.
+[16:07:55] [127.0.0.1][aa9bf8e5][ExtensionHostConnection] <25237> Launched Extension Host Process.
+[16:07:56] *
+[16:07:56] baseEnv {
+  MAIL: '/var/mail/grupo8',
+  USER: 'grupo8',
+  SSH_CLIENT: '200.28.178.163 56017 22',
+  LANGUAGE: 'en_US:en',
+  SHLVL: '3',
+  HOME: '/home/grupo8',
+  LOGNAME: 'grupo8',
+  _: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/node',
+  XDG_SESSION_ID: '12275',
+  PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
+  VSCODE_AGENT_FOLDER: '/home/grupo8/.vscode-server',
+  XDG_RUNTIME_DIR: '/run/user/1132',
+  LANG: 'en_US.UTF-8',
+  SHELL: '/bin/bash',
+  PWD: '/home/grupo8',
+  SSH_CONNECTION: '200.28.178.163 56017 146.155.13.72 22',
+  VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/remote/node_modules',
+  VSCODE_CWD: '/home/grupo8',
+  LS_COLORS: '',
+  LESSCLOSE: '/usr/bin/lesspipe %s %s',
+  S_COLORS: 'auto',
+  XDG_DATA_DIRS: '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+  LESSOPEN: '| /usr/bin/lesspipe %s',
+  VSCODE_LOG_NATIVE: 'false',
+  VSCODE_AMD_ENTRYPOINT: 'vs/server/remoteExtensionHostProcess',
+  VSCODE_PIPE_LOGGING: 'true',
+  VSCODE_VERBOSE_LOGGING: 'true',
+  VSCODE_EXTHOST_WILL_SEND_SOCKET: 'true',
+  VSCODE_HANDLES_UNCAUGHT_ERRORS: 'true',
+  VSCODE_LOG_STACK: 'false',
+  VSCODE_NLS_CONFIG: '{"locale":"en","availableLanguages":{}}',
+  BROWSER: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin/helpers/browser.sh'
+}
+[16:08:04] *
+[16:08:04] baseEnv {
+  MAIL: '/var/mail/grupo8',
+  USER: 'grupo8',
+  SSH_CLIENT: '200.28.178.163 56017 22',
+  LANGUAGE: 'en_US:en',
+  SHLVL: '3',
+  HOME: '/home/grupo8',
+  LOGNAME: 'grupo8',
+  _: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/node',
+  XDG_SESSION_ID: '12275',
+  PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
+  VSCODE_AGENT_FOLDER: '/home/grupo8/.vscode-server',
+  XDG_RUNTIME_DIR: '/run/user/1132',
+  LANG: 'en_US.UTF-8',
+  SHELL: '/bin/bash',
+  PWD: '/home/grupo8',
+  SSH_CONNECTION: '200.28.178.163 56017 146.155.13.72 22',
+  VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/remote/node_modules',
+  VSCODE_CWD: '/home/grupo8',
+  LS_COLORS: '',
+  LESSCLOSE: '/usr/bin/lesspipe %s %s',
+  S_COLORS: 'auto',
+  XDG_DATA_DIRS: '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+  LESSOPEN: '| /usr/bin/lesspipe %s',
+  VSCODE_LOG_NATIVE: 'false',
+  VSCODE_AMD_ENTRYPOINT: 'vs/server/remoteExtensionHostProcess',
+  VSCODE_PIPE_LOGGING: 'true',
+  VSCODE_VERBOSE_LOGGING: 'true',
+  VSCODE_EXTHOST_WILL_SEND_SOCKET: 'true',
+  VSCODE_HANDLES_UNCAUGHT_ERRORS: 'true',
+  VSCODE_LOG_STACK: 'false',
+  VSCODE_NLS_CONFIG: '{"locale":"en","availableLanguages":{}}',
+  BROWSER: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin/helpers/browser.sh'
+}
+[16:08:11] *
+[16:08:11] baseEnv {
+  MAIL: '/var/mail/grupo8',
+  USER: 'grupo8',
+  SSH_CLIENT: '200.28.178.163 56017 22',
+  LANGUAGE: 'en_US:en',
+  SHLVL: '3',
+  HOME: '/home/grupo8',
+  LOGNAME: 'grupo8',
+  _: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/node',
+  XDG_SESSION_ID: '12275',
+  PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
+  VSCODE_AGENT_FOLDER: '/home/grupo8/.vscode-server',
+  XDG_RUNTIME_DIR: '/run/user/1132',
+  LANG: 'en_US.UTF-8',
+  SHELL: '/bin/bash',
+  PWD: '/home/grupo8',
+  SSH_CONNECTION: '200.28.178.163 56017 146.155.13.72 22',
+  VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/remote/node_modules',
+  VSCODE_CWD: '/home/grupo8',
+  LS_COLORS: '',
+  LESSCLOSE: '/usr/bin/lesspipe %s %s',
+  S_COLORS: 'auto',
+  XDG_DATA_DIRS: '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+  LESSOPEN: '| /usr/bin/lesspipe %s',
+  VSCODE_LOG_NATIVE: 'false',
+  VSCODE_AMD_ENTRYPOINT: 'vs/server/remoteExtensionHostProcess',
+  VSCODE_PIPE_LOGGING: 'true',
+  VSCODE_VERBOSE_LOGGING: 'true',
+  VSCODE_EXTHOST_WILL_SEND_SOCKET: 'true',
+  VSCODE_HANDLES_UNCAUGHT_ERRORS: 'true',
+  VSCODE_LOG_STACK: 'false',
+  VSCODE_NLS_CONFIG: '{"locale":"en","availableLanguages":{}}',
+  BROWSER: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin/helpers/browser.sh'
+}
+[16:08:19] *
+[16:08:19] baseEnv {
+  MAIL: '/var/mail/grupo8',
+  USER: 'grupo8',
+  SSH_CLIENT: '200.28.178.163 56017 22',
+  LANGUAGE: 'en_US:en',
+  SHLVL: '3',
+  HOME: '/home/grupo8',
+  LOGNAME: 'grupo8',
+  _: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/node',
+  XDG_SESSION_ID: '12275',
+  PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin',
+  VSCODE_AGENT_FOLDER: '/home/grupo8/.vscode-server',
+  XDG_RUNTIME_DIR: '/run/user/1132',
+  LANG: 'en_US.UTF-8',
+  SHELL: '/bin/bash',
+  PWD: '/home/grupo8',
+  SSH_CONNECTION: '200.28.178.163 56017 146.155.13.72 22',
+  VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/remote/node_modules',
+  VSCODE_CWD: '/home/grupo8',
+  LS_COLORS: '',
+  LESSCLOSE: '/usr/bin/lesspipe %s %s',
+  S_COLORS: 'auto',
+  XDG_DATA_DIRS: '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+  LESSOPEN: '| /usr/bin/lesspipe %s',
+  VSCODE_LOG_NATIVE: 'false',
+  VSCODE_AMD_ENTRYPOINT: 'vs/server/remoteExtensionHostProcess',
+  VSCODE_PIPE_LOGGING: 'true',
+  VSCODE_VERBOSE_LOGGING: 'true',
+  VSCODE_EXTHOST_WILL_SEND_SOCKET: 'true',
+  VSCODE_HANDLES_UNCAUGHT_ERRORS: 'true',
+  VSCODE_LOG_STACK: 'false',
+  VSCODE_NLS_CONFIG: '{"locale":"en","availableLanguages":{}}',
+  BROWSER: '/home/grupo8/.vscode-server/bin/507ce72a4466fbb27b715c3722558bb15afa9f48/bin/helpers/browser.sh'
+}
+New EH opened, aborting shutdown
+[16:12:55] New EH opened, aborting shutdown
+[16:17:45] [127.0.0.1][e3203e2f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[16:17:46] [127.0.0.1][aa9bf8e5][ExtensionHostConnection] <25237> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[16:17:46] Last EH closed, waiting before shutting down
+Last EH closed, shutting down
+[16:22:46] Last EH closed, shutting down

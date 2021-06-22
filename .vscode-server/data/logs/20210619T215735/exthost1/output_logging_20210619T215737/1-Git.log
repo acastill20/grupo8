@@ -1,0 +1,176 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --git-dir
+Open repository: /home/grupo8
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :Sites/consultas/consulta_mostrar_direcciones.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_mostrar_direcciones.php
+> git show --textconv :Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+> git check-ignore -v -z --stdin
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/index.php
+fatal: your current branch 'master' does not have any commits yet
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/index.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Entrega 2/Despachos.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Despachos.csv
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git show --textconv :Entrega 2/Despachos.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Despachos.csv
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git show --textconv :Sites/consultas/consulta_4.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_4.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_4.php
+fatal: your current branch 'master' does not have any commits yet
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_4.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Entrega 2/Personal.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Personal.csv
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Entrega 2/Personal.csv
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Entrega 2/PersonalAdmin.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/PersonalAdmin.csv
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git show --textconv :Entrega 2/Personal.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Personal.csv
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git show --textconv :Entrega 2/Personal.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Personal.csv
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Entrega 2/Personal.csv
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Entrega 2/Vehiculos.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Vehiculos.csv
+> git show --textconv :Entrega 2/Personal.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Personal.csv
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git show --textconv :Sites/consultas/consulta_4.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_4.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_4.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Entrega 2/VehiculosLicencia.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/VehiculosLicencia.csv
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/index.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_4.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_4.php
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/index.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_4.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_4.php
+> git show --textconv :Entrega 2/VehiculosLicencia.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/VehiculosLicencia.csv
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git show --textconv :Sites/consultas/consulta_vehiculos_en_comuna.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_en_comuna.php
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php
+> git show --textconv :Sites/consultas/consulta_vehiculos_en_comuna.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_en_comuna.php
+> git show --textconv :Entrega 2/UnidadesJefe.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/UnidadesJefe.csv
+> git show --textconv :Entrega 2/UnidadesComunas.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/UnidadesComunas.csv
+> git show --textconv :Entrega 2/UnidadesJefe.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/UnidadesJefe.csv
+> git show --textconv :Entrega 2/VehiculosCarga.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/VehiculosCarga.csv
+> git show --textconv :Entrega 2/VehiculosFrios.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/VehiculosFrios.csv
+> git show --textconv :Entrega 2/VehiculosLicencia.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/VehiculosLicencia.csv
+> git show --textconv :Entrega 2/VehiculosPatente.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/VehiculosPatente.csv
+> git show --textconv :Entrega 2/VehiculosFrescos.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/VehiculosFrescos.csv
+> git show --textconv :Entrega 2/VehiculosCarga.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/VehiculosCarga.csv
+> git show --textconv :Entrega 2/Vehiculos.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Vehiculos.csv
+> git show --textconv :Entrega 2/UnidadesJefe.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/UnidadesJefe.csv
+> git show --textconv :Entrega 2/UnidadesComunas.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/UnidadesComunas.csv
+> git show --textconv :Entrega 2/Unidades.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Unidades.csv
+> git show --textconv :Entrega 2/PersonalRut.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/PersonalRut.csv
+> git show --textconv :Entrega 2/PersonalRepartidor.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/PersonalRepartidor.csv
+> git show --textconv :Entrega 2/PersonalAdmin.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/PersonalAdmin.csv
+> git show --textconv :Entrega 2/Personal.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Personal.csv
+> git show --textconv :Entrega 2/Despachos.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Despachos.csv
+> git show --textconv :Entrega 2/DespachosCompra.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/DespachosCompra.csv
+> git show --textconv :Entrega 2/Direcciones.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Direcciones.csv
+> git show --textconv :Sites/consultas/consulta_vehiculos_en_comuna.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_en_comuna.php
+> git show --textconv :Entrega 2/Direcciones.csv
+> git ls-files --stage -- /home/grupo8/Entrega 2/Direcciones.csv
+> git show --textconv :Sites/consultas/consulta_4.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_4.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_4.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_mostrar_direcciones.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_mostrar_direcciones.php
+> git show --textconv :Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+> git show --textconv :Sites/consultas/consulta_vehiculos_en_comuna.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_en_comuna.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_vehiculos_en_comuna.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_vehiculos_en_comuna.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_en_comuna.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_vehiculos_en_comuna.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_mostrar_direcciones.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_mostrar_direcciones.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_mostrar_direcciones.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_4.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_4.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_4.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_5.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_5.php
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/grupo8/Sites/consultas/consulta_5.php
+fatal: your current branch 'master' does not have any commits yet
+> git show --textconv :Sites/consultas/consulta_6.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_6.php
+> git show --textconv :Sites/consultas/consulta_5.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_5.php
+> git show --textconv :Sites/consultas/consulta_4.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_4.php
+> git show --textconv :Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+> git ls-files --stage -- /home/grupo8/Sites/consultas/consulta_vehiculos_despacho_comuna_ano.php
+> git show --textconv :Sites/index.php
+> git ls-files --stage -- /home/grupo8/Sites/index.php

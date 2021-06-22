@@ -1,0 +1,28 @@
+[2021-05-28 17:32:27.700] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-05-28 17:32:27.700] [remoteagent] [info] Extension host agent started.
+[2021-05-28 17:32:28.068] [remoteagent] [info] [127.0.0.1][be1af4c2][ManagementConnection] New connection established.
+[2021-05-28 17:32:28.073] [remoteagent] [info] [127.0.0.1][c1bc899c][ExtensionHostConnection] New connection established.
+[2021-05-28 17:32:28.262] [remoteagent] [info] [127.0.0.1][c1bc899c][ExtensionHostConnection] <9031> Launched Extension Host Process.
+[2021-05-28 18:40:28.285] [remoteagent] [info] [127.0.0.1][be1af4c2][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-05-28 18:40:28.908] [remoteagent] [warning] No ptyHost heartbeat after 6 seconds
+[2021-05-28 18:40:30.418] [remoteagent] [info] [127.0.0.1][c1bc899c][ExtensionHostConnection] <9031> Extension Host Process exited with code: 0, signal: null.
+[2021-05-28 18:40:30.444] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-05-28 18:41:18.998] [remoteagent] [info] Got delay-shutdown request while in shutdown timeout, delaying
+[2021-05-28 18:41:19.016] [remoteagent] [info] Cancelling previous shutdown timeout
+[2021-05-28 18:41:19.478] [remoteagent] [info] [127.0.0.1][8e9e4539][ManagementConnection] New connection established.
+[2021-05-28 18:41:19.501] [remoteagent] [info] [127.0.0.1][21258563][ExtensionHostConnection] New connection established.
+[2021-05-28 18:41:19.790] [remoteagent] [info] [127.0.0.1][21258563][ExtensionHostConnection] <17728> Launched Extension Host Process.
+[2021-05-28 18:46:19.027] [remoteagent] [info] New EH opened, aborting shutdown
+[2021-05-28 18:53:50.938] [remoteagent] [info] [127.0.0.1][8e9e4539][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-05-28 18:53:51.982] [remoteagent] [info] [127.0.0.1][21258563][ExtensionHostConnection] <17728> Extension Host Process exited with code: 0, signal: null.
+[2021-05-28 18:53:51.984] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-05-28 18:58:51.987] [remoteagent] [info] Last EH closed, shutting down

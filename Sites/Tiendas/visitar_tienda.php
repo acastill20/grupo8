@@ -1,5 +1,8 @@
-<?php require('../config/conexion.php');
-
+<?php
+session_start();
+include('../templates/header.html');
+include('navbar.php');
+require('../config/conexion.php');
 $tienda_id = $_POST["tienda_elegida"];
 
 $query = "
@@ -14,6 +17,7 @@ $resultado -> execute();
 $data = $resultado -> fetchAll();
 $d = $data[0];
 ?>
+<html style="background-color: #6495ed">
 
 
 <div align='center'>

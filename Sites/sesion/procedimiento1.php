@@ -2,7 +2,14 @@
     session_start();
     require("../config/conexion.php");
 
-    $query = "SELECT nombre, rut, edad, sexo, nombre_direccion, comuna, jefe FROM personal, personaladmin, Unidades, Direcciones WHERE personal.pid = personaladmin.pid AND personaladmin.uid = unidades.uid AND Unidades.direccion = Direcciones.direccion ORDER BY personal.pid;";
+    $query = "
+    SELECT nombre, rut, edad, sexo, nombre_direccion, comuna, jefe
+    FROM personal, personaladmin, Unidades, Direcciones
+    WHERE personal.pid = personaladmin.pid
+    AND personaladmin.uid = unidades.uid
+    AND Unidades.direccion = Direcciones.direccion
+    ORDER BY personal.pid;
+    ";
     $result = $db -> prepare($query);
     $result -> execute();
     $personaladmin = $result -> fetchAll();

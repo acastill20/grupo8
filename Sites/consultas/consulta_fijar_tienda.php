@@ -18,7 +18,7 @@
             }
             echo "</select>";
 
-            echo "<input type="submit" value="Buscar por tienda" name="submit_C0">";
+            echo "<input type='submit' value='Buscar por tienda' name='submit_C0'>";
         
         echo "</form>";
         ?>

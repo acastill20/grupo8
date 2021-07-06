@@ -17,7 +17,7 @@
     <div>
         <?php
             if (! empty($_POST['submit_C2'])){
-                $consulta = 
+                $consulta = 1;
             }
         ?>  
     </div>

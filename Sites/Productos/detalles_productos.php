@@ -3,7 +3,7 @@ include('../templates/header.html');
 include('../templates/navbar.php');
 
 # revisar cómo se guarda id producto en post
-$id_producto = $_POST["id_producto"];
+$id_producto = $_POST['producto_elegido'];
 
 $query1 = "
 SELECT productos.id, productos.nombre, productos.precio, productos,descripcion, productos.categoria

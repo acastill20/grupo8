@@ -9,8 +9,10 @@ $resultado -> execute();
 $data = $resultado -> fetchAll();
 ?>
 
+<html style="background-color: #6495ed">
+
 <div align='center'>
-    <h1> Ver tod0s los productos </h1>
+    <h1> Ver todos los productos </h1>
 </div>
 
 <div>
@@ -32,8 +34,8 @@ $data = $resultado -> fetchAll();
             if (true) {
                 echo "
                 <td>
-                <form action='visitar_tienda.php' method='post' align='center'>
-                    <input type='hidden' value=$d[1] class='boton' name='tienda_elegida'>
+                <form action='detalles_productos.php' method='post' align='center'>
+                    <input type='hidden' value=$d[1] class='boton' name='producto_elegido'>
                     <input type='submit' value='Visitar' class='boton'>
                 </form>
                 </td>

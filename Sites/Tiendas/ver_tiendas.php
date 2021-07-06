@@ -9,6 +9,7 @@ $resultado -> execute();
 $data = $resultado -> fetchAll();
 ?>
 
+<html style="background-color: #6495ed">
 <div align='center'>
     <h1> Ver todas las tiendas </h1>
 </div>

@@ -1,0 +1,278 @@
+pid,clasificacion,uid,jefe
+5,ti,11,0
+7,ti,12,0
+10,administracion,4,1
+13,vendedor,56,0
+16,asistente de aseo,42,0
+17,vendedor,51,0
+19,vendedor,54,0
+22,administracion,3,1
+27,vendedor,3,0
+30,ti,29,0
+31,administracion,9,1
+35,administracion,44,1
+41,asistente de aseo,47,0
+45,ti,56,0
+46,administracion,38,1
+47,administracion,25,1
+48,ti,47,0
+50,asistente de aseo,27,0
+54,asistente de aseo,54,0
+56,vendedor,32,0
+57,vendedor,8,0
+60,ti,6,0
+62,asistente de aseo,25,0
+64,administracion,48,1
+66,asistente de aseo,2,0
+68,asistente de aseo,55,0
+69,administracion,34,1
+70,vendedor,45,0
+74,vendedor,54,0
+76,administracion,50,1
+77,administracion,18,1
+78,ti,17,0
+80,ti,36,0
+81,administracion,21,1
+83,vendedor,28,0
+87,asistente de aseo,34,0
+88,administracion,39,1
+90,vendedor,32,0
+92,administracion,24,1
+94,vendedor,6,0
+98,vendedor,12,0
+105,ti,52,0
+107,ti,50,0
+108,vendedor,0,0
+111,asistente de aseo,20,0
+112,ti,34,0
+113,administracion,27,1
+117,ti,43,0
+121,vendedor,46,0
+134,asistente de aseo,37,0
+135,vendedor,55,0
+138,vendedor,7,0
+139,administracion,15,1
+143,asistente de aseo,52,0
+147,vendedor,1,0
+150,vendedor,30,0
+152,asistente de aseo,49,0
+155,administracion,12,1
+162,administracion,37,1
+163,ti,48,0
+164,vendedor,51,0
+166,administracion,40,1
+170,vendedor,0,0
+171,administracion,17,1
+175,administracion,5,1
+176,asistente de aseo,54,0
+180,ti,48,0
+182,administracion,41,1
+186,ti,5,0
+190,administracion,20,1
+193,ti,20,0
+195,vendedor,37,0
+197,ti,28,0
+201,vendedor,37,0
+202,ti,32,0
+203,ti,19,0
+204,vendedor,12,0
+208,vendedor,55,0
+209,ti,5,0
+211,vendedor,6,0
+212,asistente de aseo,37,0
+215,asistente de aseo,45,0
+218,asistente de aseo,30,0
+223,ti,31,0
+225,asistente de aseo,16,0
+226,ti,52,0
+229,vendedor,30,0
+231,ti,12,0
+234,ti,42,0
+237,vendedor,25,0
+241,ti,53,0
+244,administracion,0,1
+249,vendedor,22,0
+252,administracion,30,1
+255,ti,46,0
+256,ti,55,0
+260,ti,7,0
+261,asistente de aseo,10,0
+263,asistente de aseo,13,0
+271,vendedor,1,0
+272,asistente de aseo,32,0
+278,vendedor,44,0
+279,asistente de aseo,45,0
+280,ti,43,0
+290,asistente de aseo,48,0
+292,ti,19,0
+293,vendedor,7,0
+294,ti,0,0
+295,administracion,6,1
+297,ti,10,0
+301,administracion,42,1
+303,asistente de aseo,32,0
+305,administracion,55,1
+307,vendedor,34,0
+308,asistente de aseo,15,0
+310,vendedor,24,0
+312,ti,5,0
+319,ti,12,0
+320,administracion,33,1
+322,vendedor,34,0
+325,asistente de aseo,47,0
+326,asistente de aseo,25,0
+330,vendedor,32,0
+337,vendedor,38,0
+338,ti,8,0
+341,ti,1,0
+343,ti,3,0
+348,asistente de aseo,47,0
+349,asistente de aseo,6,0
+352,asistente de aseo,54,0
+359,asistente de aseo,35,0
+360,asistente de aseo,50,0
+364,vendedor,47,0
+370,ti,35,0
+373,vendedor,14,0
+374,ti,41,0
+386,administracion,10,1
+387,ti,30,0
+401,asistente de aseo,42,0
+405,asistente de aseo,45,0
+406,vendedor,2,0
+408,vendedor,48,0
+413,ti,30,0
+417,vendedor,18,0
+418,administracion,1,1
+419,asistente de aseo,54,0
+420,vendedor,28,0
+426,ti,47,0
+427,vendedor,1,0
+428,vendedor,30,0
+431,asistente de aseo,34,0
+433,vendedor,40,0
+434,administracion,45,1
+438,ti,47,0
+439,administracion,49,1
+440,asistente de aseo,47,0
+443,ti,41,0
+447,asistente de aseo,24,0
+449,vendedor,11,0
+450,vendedor,33,0
+451,asistente de aseo,25,0
+453,asistente de aseo,56,0
+454,asistente de aseo,30,0
+457,administracion,46,1
+461,vendedor,44,0
+468,ti,38,0
+469,asistente de aseo,30,0
+471,administracion,35,1
+473,ti,50,0
+480,vendedor,53,0
+481,asistente de aseo,10,0
+482,vendedor,24,0
+489,ti,2,0
+491,asistente de aseo,1,0
+492,ti,26,0
+494,ti,24,0
+498,asistente de aseo,16,0
+499,asistente de aseo,51,0
+500,asistente de aseo,41,0
+501,asistente de aseo,52,0
+504,asistente de aseo,18,0
+510,asistente de aseo,49,0
+522,asistente de aseo,51,0
+527,asistente de aseo,25,0
+528,vendedor,1,0
+529,asistente de aseo,13,0
+532,administracion,47,1
+533,vendedor,28,0
+538,vendedor,14,0
+541,vendedor,29,0
+544,administracion,22,1
+545,administracion,54,1
+547,administracion,31,1
+549,ti,18,0
+558,asistente de aseo,37,0
+565,ti,47,0
+569,administracion,14,1
+571,vendedor,14,0
+572,administracion,2,1
+580,asistente de aseo,40,0
+583,administracion,53,1
+585,vendedor,44,0
+587,asistente de aseo,26,0
+588,vendedor,54,0
+589,vendedor,1,0
+594,ti,40,0
+597,ti,2,0
+604,asistente de aseo,42,0
+607,administracion,8,1
+613,vendedor,8,0
+622,vendedor,44,0
+623,asistente de aseo,11,0
+626,vendedor,25,0
+627,vendedor,54,0
+637,administracion,56,1
+638,vendedor,18,0
+647,asistente de aseo,17,0
+648,vendedor,31,0
+649,vendedor,32,0
+650,asistente de aseo,45,0
+651,ti,13,0
+656,administracion,52,1
+659,vendedor,40,0
+662,administracion,43,1
+666,asistente de aseo,28,0
+668,asistente de aseo,9,0
+675,ti,35,0
+684,vendedor,5,0
+685,vendedor,22,0
+688,administracion,28,1
+696,ti,11,0
+713,vendedor,23,0
+714,administracion,32,1
+719,asistente de aseo,20,0
+721,vendedor,34,0
+724,vendedor,19,0
+727,asistente de aseo,51,0
+729,ti,10,0
+730,asistente de aseo,16,0
+732,asistente de aseo,20,0
+735,vendedor,38,0
+739,ti,19,0
+740,vendedor,17,0
+743,ti,56,0
+746,ti,19,0
+747,vendedor,1,0
+748,administracion,51,1
+750,ti,19,0
+751,asistente de aseo,9,0
+752,ti,51,0
+754,ti,25,0
+755,vendedor,5,0
+764,administracion,16,1
+765,administracion,29,1
+766,ti,51,0
+767,asistente de aseo,49,0
+769,administracion,23,1
+770,ti,46,0
+771,ti,27,0
+774,administracion,26,1
+775,asistente de aseo,27,0
+781,administracion,11,1
+782,asistente de aseo,21,0
+784,administracion,36,1
+786,administracion,13,1
+788,vendedor,48,0
+789,asistente de aseo,31,0
+795,ti,10,0
+796,administracion,7,1
+806,vendedor,17,0
+807,asistente de aseo,41,0
+808,ti,3,0
+817,administracion,19,1
+819,vendedor,51,0
+821,asistente de aseo,50,0
+822,vendedor,44,0
+824,asistente de aseo,17,0

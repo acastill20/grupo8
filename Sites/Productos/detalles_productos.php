@@ -23,10 +23,10 @@ $prod_precio = $producto1[2];
 $prod_descripcion = $producto1[3];
 $prod_categoria = $producto[4];
 
-settype($prod_nombre, "STRING");
-settype($prod_precio, "STRING");
-settype($prod_descripcion, "STRING");
-settype($prod_categoria, "STRING");
+// settype($prod_nombre, "STRING");
+// settype($prod_precio, "STRING");
+// settype($prod_descripcion, "STRING");
+// settype($prod_categoria, "STRING");
 
 if ($prod_categoria == 'comestible') {
     $query2 = "
@@ -106,31 +106,20 @@ if ($prod_categoria == 'comestible') {
     $prod_alto = $producto2[2];
     $prod_peso = $producto2[3];
 }
-echo 'aaaaaaaaaaaaaaaaaaaaaaaaa';
-echo gettype($prod_nombre);
-echo gettype($prod_precio);
-echo gettype($prod_descripcion);
-echo gettype($prod_categoria);
-
-echo $prod_nombre;
-echo $prod_precio;
-echo $prod_descripcion;
-echo $prod_categoria;
-
-echo "
+?>
 
 <div class='column' style='width: 30%; margin-right: 30px'>
     <div class='card'>
         <div class='card-content'>
             <div class='content'>
-                <h2><strong>$prod_nombre</strong></h2>
+                <h2><strong><?php echo ucwords($prod_nombre) ?></strong></h2>
                 <p><strong>Nombre:</strong> aaaa</p>
             </div>
         </div>
     </div>
 </div>
-";
-?>
+
+
 
 <div>
 

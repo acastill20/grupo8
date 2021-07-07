@@ -31,7 +31,7 @@ if (isset($_SESSION['rut'])){?>
     <div class="field" style="width: 300px">
       <label class="label">Nombre</label>
       <div class="control">
-        <input class="input" type="text" name="nombre" placeholder="Andrés Castillo">
+        <input class="input" type="text" name="nombre" placeholder="NO CALLER ID">
       </div>
     </div>
     <div class="field" style="width: 300px">
@@ -59,7 +59,7 @@ if (isset($_SESSION['rut'])){?>
     <div class="field" style="width: 300px">
       <label class="label">Dirección</label>
       <div class="control">
-        <input class="input" type="text" name="direccion" placeholder="Calle Falsa 69">
+        <input class="input" type="text" name="direccion" placeholder="Calle Falsa 123">
       </div>
     </div>
     <div class="field" style="width: 300px">
@@ -71,7 +71,7 @@ if (isset($_SESSION['rut'])){?>
     <div class="field" style="width: 300px">
       <label class="label">Contraseña</label>
       <div class="control">
-        <input class="input" type="text" name="contrasena" placeholder="1232">
+        <input class="input" type="password" name="contrasena" placeholder="1232">
       </div>
     </div>
     <?php if (!isset($_SESSION['rut'])){?>

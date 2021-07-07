@@ -37,7 +37,7 @@ include('templates/header.html');   ?>
 <div class="field" style="width: 300px">
   <label class="label">Contraseña</label>
   <div class="control">
-    <input class="input" type="text" name="contraseña" placeholder="1234">
+    <input class="input" type="password" name="contraseña" placeholder="1234">
   </div>
 </div>
 <?php if (!isset($_SESSION['rut'])){?>

@@ -32,19 +32,19 @@ if (isset($_SESSION['rut']) || (isset($_GET['error']))) {
 		<div class="field" style="width: 300px">
 			<label class="label">Contraseña actual</label>
 			<div class="control">
-				<input class="input" type="text" name="op" placeholder="Contraseña actual">
+				<input class="input" type="password" name="op" placeholder="Contraseña actual">
 			</div>
 		</div>
 		<div class="field" style="width: 300px">
 			<label class="label">Nueva contraseña</label>
 			<div class="control">
-				<input class="input" type="text" name="np" placeholder="Nueva contraseña">
+				<input class="input" type="password" name="np" placeholder="Nueva contraseña">
 			</div>
 		</div>
 		<div class="field" style="width: 300px">
 			<label class="label">Confirmar nueva contraseña</label>
 			<div class="control">
-				<input class="input" type="text" name="c_np" placeholder="Confirmar nueva contraseña">
+				<input class="input" type="password" name="c_np" placeholder="Confirmar nueva contraseña">
 			</div>
 		</div>
 		<?php if (isset($_SESSION['rut'])){ ?> 

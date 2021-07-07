@@ -23,10 +23,10 @@ $prod_precio = $producto1[2];
 $prod_descripcion = $producto1[3];
 $prod_categoria = $producto1[4];
 
-// settype($prod_nombre, "STRING");
-// settype($prod_precio, "STRING");
-// settype($prod_descripcion, "STRING");
-// settype($prod_categoria, "STRING");
+settype($prod_nombre, "STRING");
+settype($prod_precio, "STRING");
+settype($prod_descripcion, "STRING");
+settype($prod_categoria, "STRING");
 
 if ($prod_categoria == 'comestible') {
     $query2 = "
@@ -44,6 +44,9 @@ if ($prod_categoria == 'comestible') {
     $prod_fecha_expiracion = $producto2[0];
     $prod_sub_categoria = $producto2[1];
 
+    settype($prod_fecha_expiracion, "STRING");
+    settype($prod_sub_categoria, "STRING");
+
     if ($prod_sub_categoria == 'fresco') {
         $query3 = "
         SELECT productos_frescos.duracion_dias
@@ -58,6 +61,7 @@ if ($prod_categoria == 'comestible') {
         $producto3 = $data3[0];
 
         $prod_duracion_dias = $producto3[0];
+        settype($prod_duracion_dias, "STRING");
 
     } elseif ($prod_sub_categoria == 'congelado') {
         $query3 = "
@@ -73,6 +77,7 @@ if ($prod_categoria == 'comestible') {
         $producto3 = $data3[0];
 
         $prod_peso = $producto3[0];
+        settype($prod_peso, "STRING");
 
     } elseif ($prod_sub_categoria == 'conserva') {
         $query3 = "
@@ -88,6 +93,7 @@ if ($prod_categoria == 'comestible') {
         $producto3 = $data3[0];
 
         $prod_metodo = $producto3[0];
+        settype($prod_metodo, "STRING");
     }
 } elseif ($prod_categoria == 'no comestible') {
     $query2 = "
@@ -105,6 +111,11 @@ if ($prod_categoria == 'comestible') {
     $prod_largo = $producto2[1];
     $prod_alto = $producto2[2];
     $prod_peso = $producto2[3];
+
+    settype($prod_ancho, "STRING");
+    settype($prod_largo, "STRING");
+    settype($prod_alto, "STRING");
+    settype($prod_peso, "STRING");
 }
 ?>
 
@@ -127,6 +138,11 @@ if ($prod_categoria == 'comestible') {
                     } elseif ($prod_sub_categoria == 'conserva') {
                         echo "<p><strong>Metodo de conserva: </strong>".ucwords($prod_metodo)." Dias</p>";
                     } 
+                } elseif ($prod_categoria == 'no comestible') {
+                    echo "<p><strong>Ancho: </strong>".ucwords($prod_ancho)." Dias</p>";
+                    echo "<p><strong>Largo: </strong>".ucwords($prod_largo)." Dias</p>";
+                    echo "<p><strong>Alto: </strong>".ucwords($prod_alto)." Dias</p>";
+                    echo "<p><strong>Peso: </strong>".ucwords($prod_peso)." Dias</p>";
                 }
                 ?>
             </div>

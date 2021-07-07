@@ -23,8 +23,6 @@ $prod_precio = $producto1[2];
 $prod_descripcion = $producto1[3];
 $prod_categoria = $producto[4];
 
-echo count($producto1);
-
 settype($prod_nombre, 'STRING');
 settype($prod_precio, 'STRING');
 settype($prod_descripcion, 'STRING');
@@ -113,21 +111,21 @@ echo $prod_nombre;
 echo $prod_precio;
 echo $prod_descripcion;
 echo $prod_categoria;
-?>
 
-<div class="column" style="width: 30%; margin-right: 30px">
-    <div class="card">
-        <div class="card-content">
-            <div class="content">
-                <h2><strong>AAAAAA<?php echo ucwords($prod_nombre) ?></strong></h2>
-                <p><strong>Nombre:</strong> <?php echo ucwords($_SESSION['nombre'])?></p>
-                <p><strong>Rut:</strong> <?php echo $_SESSION['rut'] ?></p>
-                <p><strong>Edad:</strong> <?php echo $_SESSION['edad'] ?></p>
-                <p><strong>Dirección:</strong> <?php echo ucwords($_SESSION['direccion']) ?>, <?php echo ucwords($_SESSION['comuna']) ?></p>
+echo "
+
+<div class='column' style='width: 30%; margin-right: 30px'>
+    <div class='card'>
+        <div class='card-content'>
+            <div class='content'>
+                <h2><strong>$prod_nombre</strong></h2>
+                <p><strong>Nombre:</strong> aaaa</p>
             </div>
         </div>
     </div>
 </div>
+";
+?>
 
 <div>
 

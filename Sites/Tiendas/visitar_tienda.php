@@ -250,7 +250,7 @@ $d = $data[0];
                     $result31 = $db2 -> prepare($query31);
                     $result31 -> execute();
                     $data31 = $result31 -> fetchAll();
-                    echo "<br>ID producto<br>";
+                    echo "<br>ID Producto<br>";
                     echo "<select name = 'id_producto'>";
                     foreach ($data31 as $row){
                         echo $row[0];
@@ -259,7 +259,7 @@ $d = $data[0];
                     echo "</select>";
                     echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>";
 
-                    echo "<input type='submit' value='Buscar producto' name='submit_C3'>";
+                    echo "<input type='submit' value='Comprar producto' name='submit_C3'>";
                 
                 echo "</form>";
                 ?>
@@ -328,7 +328,7 @@ $d = $data[0];
                         $data36 = $result36 -> fetchAll();
                         $nombre_direccion = $data36[0][0];
 
-                        if($opcion==0){
+                        if($opcion==1){
                             echo "
                             <br />
                             <br />
@@ -339,7 +339,7 @@ $d = $data[0];
                             </article>";
                         }
                        
-                        elseif ($opcion==1){
+                        elseif ($opcion==2){
                             echo "
                             <br />
                             <br />
@@ -350,7 +350,7 @@ $d = $data[0];
                             </article>";
                         }
                         
-                        elseif ($opcion==2){
+                        elseif ($opcion==3){
                             echo"
                             <br />
                             <br />

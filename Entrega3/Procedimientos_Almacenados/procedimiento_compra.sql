@@ -26,7 +26,7 @@ BEGIN
     AND productos.id = vende.id_producto
     AND productos.id = id_producto_ingresado) THEN
         -- RETURN "La tienda no vende este producto. Intenta con otro ID.";
-        RETURN 0;
+        RETURN 1;
     END IF;
 
     -- ¿La tienda despacha al menos a una dirección del usuario? (RETORNAR MENSAJE)
@@ -46,7 +46,7 @@ BEGIN
     AND direcciones_usuarios.id_usuario = id_usuario
     LIMIT 1) IS NULL THEN
         -- RETURN "La tienda no despacha a ninguna de las comunas de tus direcciones.";
-        RETURN 1;
+        RETURN 2;
     END IF;
 
     -- IF (SELECT direcciones.id
@@ -107,7 +107,7 @@ BEGIN
     INSERT INTO compras VALUES(coidmax + 1, id_usuario_fijado, did, id_tienda_ingresado);
     INSERT INTO producto_comprado VALUES(coidmax + 1, id_producto_ingresado, 1);
     -- RETURN CONCAT('¡Se ha realizado con éxito tu compra!\nCompra #', (coidmax + 1), '\n', 'Precio total: ', precio, '\n', 'Envío con dirección ', nombre_direccion);
-    RETURN 2;
+    RETURN 3;
 
 END;
 $$ language plpgsql;

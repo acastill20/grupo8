@@ -23,10 +23,10 @@ $prod_precio = $producto1[2];
 $prod_descripcion = $producto1[3];
 $prod_categoria = $producto[4];
 
-settype($prod_nombre, 'STRING');
-settype($prod_precio, 'STRING');
-settype($prod_descripcion, 'STRING');
-settype($prod_categoria, 'STRING');
+settype($prod_nombre, "STRING");
+settype($prod_precio, "STRING");
+settype($prod_descripcion, "STRING");
+settype($prod_categoria, "STRING");
 
 if ($prod_categoria == 'comestible') {
     $query2 = "
@@ -111,6 +111,11 @@ echo gettype($prod_nombre);
 echo gettype($prod_precio);
 echo gettype($prod_descripcion);
 echo gettype($prod_categoria);
+
+echo $prod_nombre;
+echo $prod_precio;
+echo $prod_descripcion;
+echo $prod_categoria;
 
 echo "
 

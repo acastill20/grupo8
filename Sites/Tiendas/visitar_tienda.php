@@ -112,9 +112,10 @@ $d = $data[0];
                                 ';
                             foreach ($data11 as $d1) {
                                 settype($d1[2], "STRING");
+                                // <td><a href=\'../Productos/detalles_productos.php?producto_elegido=$d1[0]\' title='detalles_productos'> $d1[1] </a></td>
                                 echo "
                                     <tr>
-                                        <td><a href=\'../Productos/detalles_productos.php?producto_elegido=$d1[0]\' title='detalles_productos'> $d1[1] </a></td>
+                                        <td><a href=\'Productos/detalles_productos.php\' title='detalles_productos'> $d1[1] </a></td>
                                         <td> $d1[2] </td>
                                     </tr>                        
                                 ";

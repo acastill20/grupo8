@@ -191,7 +191,7 @@ $d = $data[0];
                         $result21 -> execute();
                         $data21 = $result21 -> fetchAll();
                         echo "<br><br>
-                        <table class="table is-striped is-hoverable" align='center' cellspacing='10em'>
+                        <table class='table is-striped is-hoverable' align='center' cellspacing='10em'>
                             <thead>
                                 <tr>
                                     <th><h2> Nombre </h2></th>

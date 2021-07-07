@@ -119,6 +119,8 @@ if ($prod_categoria == 'comestible') {
 }
 ?>
 
+<html style="background-color: #6495ed">
+
 <div class='column' style='width: 30%; margin-right: 30px'>
     <div class='card'>
         <div class='card-content'>

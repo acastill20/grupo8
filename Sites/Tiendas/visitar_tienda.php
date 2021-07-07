@@ -202,6 +202,7 @@ $d = $data[0];
                         <table class='table is-striped is-hoverable' align='center' cellspacing='10em'>
                             <thead>
                                 <tr>
+                                    <th><h2> ID </h2></th>
                                     <th><h2> Nombre </h2></th>
                                     <th><h2> Categoría </h2></th>
                                     <th><h2> Descripción </h2></th>
@@ -211,12 +212,20 @@ $d = $data[0];
                             ";
                         foreach ($data21 as $d) {
                             echo "
-                                <tr>
-                                    <td><a href=\'../Productos/detalles_productos.php?producto_elegido=$d[3]\' title='detalles_productos'> $d[0] </a></td>
-                                    <td> $d[1] </td>
-                                    <td> $d[2] </td>
-                                </tr>                        
-                            ";
+                            <tr>
+                                <td>$d[3]</td>
+                                <td>$d[0]</td>
+                                <td>$d[1]</td>
+                                <td>$d[2]</td>
+                                <td>
+                                    <div>
+                                        <form action='../Productos/detalles_productos.php' method='post' align='center'>
+                                            <input type='hidden' value=$d[3] class='boton' name='producto_elegido'>
+                                            <input type='submit' value='Ver' class='boton'>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr> ";
                         }
                         echo '
                             </tbody>

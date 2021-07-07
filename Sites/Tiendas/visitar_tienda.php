@@ -154,7 +154,7 @@ $d = $data[0];
                                             </form>
                                         </div>
                                     </td>
-                                </tr>  
+                                </tr> "; 
                             }
                             echo '
                                 </tbody>

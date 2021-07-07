@@ -49,7 +49,7 @@ if ($prod_categoria == 'comestible') {
 
     if ($prod_sub_categoria == 'fresco') {
         $query3 = "
-        SELECT productos_frescos.duracion_dias
+        SELECT productos_frescos.duracion_sin_refrigerar
         FROM productos, productos_comestibles, productos_frescos
         WHERE productos.id = productos_comestibles.id
         AND productos.id = productos_frescos.id

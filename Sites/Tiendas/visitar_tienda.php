@@ -260,7 +260,7 @@ $d = $data[0];
                     echo "</select>";
                     echo "<br>";
                     echo "<br>Cantidad <br>";
-                    echo "<input type='number' class='boton' name='cantidad' min='1' max='50'>";
+                    echo "<input type='number' class='boton' name='cantidad' min='1' max='50' value='1'>";
                     echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>";
                     echo "<br>";
                     echo "<br>";

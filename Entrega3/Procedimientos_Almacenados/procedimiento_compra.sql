@@ -43,7 +43,7 @@ BEGIN
     SELECT direcciones.id
     FROM direcciones, direcciones_usuarios
     WHERE direcciones.id = direcciones_usuarios.id_direccion
-    AND direcciones_usuarios.id_usuario = id_usuario
+    AND direcciones_usuarios.id_usuario = id_usuario_fijado
     LIMIT 1) IS NULL THEN
         -- RETURN "La tienda no despacha a ninguna de las comunas de tus direcciones.";
         RETURN 2;
@@ -75,7 +75,9 @@ BEGIN
     FROM compras;
 
     -- did
-    SELECT * INTO did FROM (
+    SELECT INTO did 
+    direcciones.id
+    FROM (
         SELECT direcciones.id
         FROM direcciones, comunas, despacha_a
         WHERE direcciones.id_comuna = comunas.id
@@ -88,7 +90,7 @@ BEGIN
         FROM direcciones, direcciones_usuarios
         WHERE direcciones.id = direcciones_usuarios.id_direccion
         AND direcciones_usuarios.id_usuario = id_usuario_fijado
-        LIMIT 1) AS foo;
+        LIMIT 1);
 
     -- nombre dirección
     SELECT INTO nombre_direccion

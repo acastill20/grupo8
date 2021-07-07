@@ -35,7 +35,7 @@ $data = $resultado -> fetchAll();
             ";
             if (true) {
                 echo "
-                <td>
+                <td class='aparecer_boton'>
                     <div class='boton_hover'>
                         <form action='detalles_productos.php' method='post' align='center'>
                             <input type='hidden' value=$d[0] class='boton' name='producto_elegido'>

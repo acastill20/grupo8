@@ -121,34 +121,36 @@ if ($prod_categoria == 'comestible') {
 
 <html style="background-color: #6495ed">
 
-<div class='column is-centered' style='width: 30%; margin-right: 30px'>
-    <div class='card'>
-        <div class='card-content'>
-            <div class='content'>
-                <h2><strong><?php echo ucwords($prod_nombre) ?></strong></h2>
-                <p><strong>Precio: </strong><?php echo "$ $prod_precio" ?></p>
-                <p><strong>Descripcion: </strong><?php echo ucfirst($prod_descripcion) ?></p>
-                <p><strong>Categoria: </strong><?php echo ucwords($prod_categoria) ?></p>
-                <?php
-                if ($prod_categoria == 'comestible') { ?>
-                    <p><strong>Sub-Categoria: </strong><?php echo ucwords($prod_sub_categoria) ?></p>
-                    <p><strong>Fecha de expiracion: </strong><?php echo $prod_fecha_expiracion ?></p>
+<div align='center'>
+    <div class='column' style='width: 30%; margin-right: 30px'>
+        <div class='card'>
+            <div class='card-content'>
+                <div class='content'>
+                    <h2><strong><?php echo ucwords($prod_nombre) ?></strong></h2>
+                    <p><strong>Precio: </strong><?php echo "$ $prod_precio" ?></p>
+                    <p><strong>Descripcion: </strong><?php echo ucfirst($prod_descripcion) ?></p>
+                    <p><strong>Categoria: </strong><?php echo ucwords($prod_categoria) ?></p>
                     <?php
-                    if ($prod_sub_categoria == 'fresco') { ?>
-                        <p><strong>Duracion del producto: </strong><?php echo $prod_duracion_dias ?> Dias</p><?php
-    
-                    } elseif ($prod_sub_categoria == 'congelado') { ?>
-                        <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> Kg</p><?php
+                    if ($prod_categoria == 'comestible') { ?>
+                        <p><strong>Sub-Categoria: </strong><?php echo ucwords($prod_sub_categoria) ?></p>
+                        <p><strong>Fecha de expiracion: </strong><?php echo $prod_fecha_expiracion ?></p>
+                        <?php
+                        if ($prod_sub_categoria == 'fresco') { ?>
+                            <p><strong>Duracion del producto: </strong><?php echo $prod_duracion_dias ?> Dias</p><?php
+        
+                        } elseif ($prod_sub_categoria == 'congelado') { ?>
+                            <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> Kg</p><?php
 
-                    } elseif ($prod_sub_categoria == 'conserva') { ?>
-                        <p><strong>Metodo de conserva: </strong><?php echo ucwords($prod_metodo) ?></p><?php
-                    } 
-                } elseif ($prod_categoria == 'no comestible') { ?> 
-                    <p><strong>Ancho: </strong><?php echo ucwords($prod_ancho) ?> cm</p>
-                    <p><strong>Largo: </strong><?php echo ucwords($prod_largo) ?> cm</p>
-                    <p><strong>Alto: </strong><?php echo ucwords($prod_alto) ?> cm</p>
-                    <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> cm</p><?php 
-                } ?> 
+                        } elseif ($prod_sub_categoria == 'conserva') { ?>
+                            <p><strong>Metodo de conserva: </strong><?php echo ucwords($prod_metodo) ?></p><?php
+                        } 
+                    } elseif ($prod_categoria == 'no comestible') { ?> 
+                        <p><strong>Ancho: </strong><?php echo ucwords($prod_ancho) ?> cm</p>
+                        <p><strong>Largo: </strong><?php echo ucwords($prod_largo) ?> cm</p>
+                        <p><strong>Alto: </strong><?php echo ucwords($prod_alto) ?> cm</p>
+                        <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> cm</p><?php 
+                    } ?> 
+                </div>
             </div>
         </div>
     </div>

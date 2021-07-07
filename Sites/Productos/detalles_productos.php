@@ -81,7 +81,7 @@ if ($prod_categoria == 'comestible') {
 
     } elseif ($prod_sub_categoria == 'conserva') {
         $query3 = "
-        SELECT *
+        SELECT productos_conservas.metodo_conserva
         FROM productos, productos_comestibles, productos_conservas
         WHERE productos.id = productos_comestibles.id
         AND productos.id = productos_conservas.id
@@ -133,7 +133,7 @@ if ($prod_categoria == 'comestible') {
                     <p><strong>Fecha de expiracion: </strong><?php echo $prod_fecha_expiracion ?></p>
                     <?php
                     if ($prod_sub_categoria == 'fresco') { ?>
-                        <p><strong>Duracion del producto: </strong><?php echo ucwords($prod_duracion_dias) ?> Dias</p><?php
+                        <p><strong>Duracion del producto: </strong><?php echo $prod_duracion_dias ?> Dias</p><?php
     
                     } elseif ($prod_sub_categoria == 'congelado') { ?>
                         <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> Kg</p><?php

@@ -114,7 +114,7 @@ $d = $data[0];
                                 settype($d1[2], "STRING");
                                 echo "
                                     <tr>
-                                        <td> $d1[1] </td>
+                                        <td><a href=\'detalles_productos.php?id_tienda=$d1[0]\' title='detalles_productos'> $d1[1] </a></td>
                                         <td> $d1[2] </td>
                                     </tr>                        
                                 ";
@@ -141,7 +141,7 @@ $d = $data[0];
                                 settype($d2[2], "STRING");
                                 echo "
                                     <tr>
-                                        <td> $d2[1] </td>
+                                        <td><a href=\'detalles_productos.php?id_tienda=$d2[0]\' title='detalles_productos'> $d2[1] </a></td>
                                         <td> $d2[2] </td>
                                     </tr>                        
                                 ";
@@ -179,7 +179,7 @@ $d = $data[0];
                 <?php
                     if (! empty($_POST['submit_C2'])){
                         $nombre_producto_ingresado = strtolower($_POST['texto_ingresado']);
-                        $query21 = "SELECT productos.nombre, productos.categoria, productos.descripcion
+                        $query21 = "SELECT productos.nombre, productos.categoria, productos.descripcion, productos.id
                         FROM productos, vende
                         WHERE vende.id_tienda = $tienda_id
                         AND productos.id = vende.id_producto
@@ -202,7 +202,7 @@ $d = $data[0];
                         foreach ($data21 as $d) {
                             echo "
                                 <tr>
-                                    <td> $d[0] </td>
+                                    <td><a href=\'detalles_productos.php?id_tienda=$d[3]\' title='detalles_productos'> $d[0] </a></td>
                                     <td> $d[1] </td>
                                     <td> $d[2] </td>
                                 </tr>                        

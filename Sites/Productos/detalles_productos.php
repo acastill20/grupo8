@@ -107,10 +107,10 @@ if ($prod_categoria == 'comestible') {
     $prod_peso = $producto2[3];
 }
 echo 'aaaaaaaaaaaaaaaaaaaaaaaaa';
-echo $prod_nombre;
-echo $prod_precio;
-echo $prod_descripcion;
-echo $prod_categoria;
+echo gettype($prod_nombre);
+echo gettype($prod_precio);
+echo gettype($prod_descripcion);
+echo gettype($prod_categoria);
 
 echo "
 

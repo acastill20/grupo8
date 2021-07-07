@@ -23,6 +23,8 @@ $prod_precio = $producto1[2];
 $prod_descripcion = $producto1[3];
 $prod_categoria = $producto[4];
 
+echo count($producto1);
+
 settype($prod_nombre, 'STRING');
 settype($prod_precio, 'STRING');
 settype($prod_descripcion, 'STRING');

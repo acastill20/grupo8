@@ -21,13 +21,15 @@ $d = $data[0];
 <html style="background-color: #6495ed">
 
 
-<div class='column' style='width: 30%; margin-right: 30px' align='center'>
-    <div class='card'>
-        <div class='card-content'>
-            <div class='content'>
-                <h2><strong><?php echo ucwords($d[0]) ?></strong></h2>
-                <p><strong>Direccion: </strong><?php echo ucwords($d[1]) ?></p>
-                <p><strong>Comuna: </strong><?php echo ucwords($d[2]) ?></p>
+<div align='center'>
+    <div class='column' style='width: 30%; margin-right: 30px'>
+        <div class='card'>
+            <div class='card-content'>
+                <div class='content'>
+                    <h2><strong><?php echo ucwords($d[0]) ?></strong></h2>
+                    <p><strong>Direccion: </strong><?php echo ucwords($d[1]) ?></p>
+                    <p><strong>Comuna: </strong><?php echo ucwords($d[2]) ?></p>
+                </div>
             </div>
         </div>
     </div>
@@ -80,30 +82,42 @@ $d = $data[0];
                         $result12 = $db2 -> prepare($query12);
                         $result12 -> execute();
                         $data12 = $result12 -> fetchAll();
-                        echo '<table align=\'center\' cellspacing=\'10em\'>
-                        <thead>
-                          <tr>
-                            <th>';
-                            // COLUMNA (TABLA) COMESTIBLES
-                            echo '<br><br>
-                            <table class="table is-striped is-hoverable" align=\'center\' cellspacing=\'10em\'>
+                        echo "
+                        <table align='center' cellspacing='10em'>
+                            <thead>
+                                <tr>
+                                    <th>
+                        
+                        <br><br>
+                            <table class='table is-striped is-hoverable' align='center' cellspacing='10em'>
                                 <thead>
                                     <tr>
+                                        <th><h2> ID </h2></th>
                                         <th><h2> Comestible </h2></th>
                                         <th><h2> Precio </h2></th>
+                                        <th><h2> Ver detalles </h2></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                ';
-                            foreach ($data11 as $d1) {
-                                settype($d1[2], "STRING");
-                                // <td><a href=\'../Productos/detalles_productos.php?producto_elegido=$d1[0]\' title='detalles_productos'> $d1[1] </a></td>
-                                echo "
-                                    <tr>
-                                        <td><a href='../Productos/detalles_productos.php' title='detalles_productos'> $d1[1] </a></td>
-                                        <td> $d1[2] </td>
-                                    </tr>                        
-                                ";
+                        ";
+                        foreach ($data11 as $d1) {
+                            settype($d1[2], "STRING");
+                            
+                            echo "
+                                <tr>
+                                    <td>$d1[0]</td>
+                                    <td>$d1[1]</td>
+                                    <td>$d1[2]</td>
+                                    <td>
+                                        <div>
+                                            <form action='../Productos/detalles_productos.php' method='post' align='center'>
+                                                <input type='hidden' value=$d1[0] class='boton' name='producto_elegido'>
+                                                <input type='submit' value='Ver' class='boton'>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>                        
+                            ";
                             }
                             echo '
                                 </tbody>
@@ -241,10 +255,6 @@ $d = $data[0];
                         settype($prid, "INTEGER");
                         settype($tid, "INTEGER");
                         settype($uid, "INTEGER");
-
-                        // echo $prid;
-                        // echo $tid;
-                        // echo $uid;
 
                         $query32 = "SELECT generar_compra($prid, $tid, $uid);";
                         $result32 = $db2 -> prepare($query32);

@@ -127,6 +127,7 @@ if ($prod_categoria == 'comestible') {
             <div class='card-content'>
                 <div class='content'>
                     <h2><strong><?php echo ucwords($prod_nombre) ?></strong></h2>
+                    <p><strong>ID: </strong><?php echo $id_producto ?></p>
                     <p><strong>Precio: </strong><?php echo "$ $prod_precio" ?></p>
                     <p><strong>Descripcion: </strong><?php echo ucfirst($prod_descripcion) ?></p>
                     <p><strong>Categoria: </strong><?php echo ucwords($prod_categoria) ?></p>

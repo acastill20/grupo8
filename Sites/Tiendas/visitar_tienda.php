@@ -93,7 +93,7 @@ $d = $data[0];
                                 <thead>
                                     <tr>
                                         <th><h2> ID </h2></th>
-                                        <th><h2> Comestible </h2></th>
+                                        <th><h2> Comestibles </h2></th>
                                         <th><h2> Precio </h2></th>
                                         <th><h2> Ver detalles </h2></th>
                                     </tr>
@@ -131,8 +131,10 @@ $d = $data[0];
                             <table class="table is-striped is-hoverable" align=\'center\' cellspacing=\'10em\'>
                                 <thead>
                                     <tr>
-                                        <th><h2> No comestible </h2></th>
-                                        <th><h2> Precio </h2></th>
+                                    <th><h2> ID </h2></th>
+                                    <th><h2> No Comestibles </h2></th>
+                                    <th><h2> Precio </h2></th>
+                                    <th><h2> Ver detalles </h2></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -140,11 +142,19 @@ $d = $data[0];
                             foreach ($data12 as $d2) {
                                 settype($d2[2], "STRING");
                                 echo "
-                                    <tr>
-                                        <td><a href=\'../Productos/detalles_productos.php?producto_elegido=$d2[0]\' title='detalles_productos'> $d2[1] </a></td>
-                                        <td> $d2[2] </td>
-                                    </tr>                        
-                                ";
+                                <tr>
+                                    <td>$d2[0]</td>
+                                    <td>$d2[1]</td>
+                                    <td>$d2[2]</td>
+                                    <td>
+                                        <div>
+                                            <form action='../Productos/detalles_productos.php' method='post' align='center'>
+                                                <input type='hidden' value=$d2[0] class='boton' name='producto_elegido'>
+                                                <input type='submit' value='Ver' class='boton'>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>  
                             }
                             echo '
                                 </tbody>

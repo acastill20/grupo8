@@ -136,16 +136,16 @@ if ($prod_categoria == 'comestible') {
                         <p><strong>Duracion del producto: </strong><?php echo ucwords($prod_duracion_dias) ?> Dias</p><?php
     
                     } elseif ($prod_sub_categoria == 'congelado') { ?>
-                        <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?></p><?php
+                        <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> Kg</p><?php
 
                     } elseif ($prod_sub_categoria == 'conserva') { ?>
                         <p><strong>Metodo de conserva: </strong><?php echo ucwords($prod_metodo) ?></p><?php
                     } 
                 } elseif ($prod_categoria == 'no comestible') { ?> 
-                    <p><strong>Ancho: </strong><?php echo ucwords($prod_ancho) ?> cm.</p>
-                    <p><strong>Largo: </strong><?php echo ucwords($prod_largo) ?> cm.</p>
-                    <p><strong>Alto: </strong><?php echo ucwords($prod_alto) ?> cm.</p>
-                    <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> cm.</p><?php 
+                    <p><strong>Ancho: </strong><?php echo ucwords($prod_ancho) ?> cm</p>
+                    <p><strong>Largo: </strong><?php echo ucwords($prod_largo) ?> cm</p>
+                    <p><strong>Alto: </strong><?php echo ucwords($prod_alto) ?> cm</p>
+                    <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> cm</p><?php 
                 } ?> 
             </div>
         </div>

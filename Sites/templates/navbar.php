@@ -15,7 +15,7 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="Tiendas/ver_tiendas.php">
+      <a class="navbar-item" href="../Tiendas/ver_tiendas.php">
         Comprar
       </a>
 

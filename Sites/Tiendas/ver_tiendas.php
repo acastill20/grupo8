@@ -21,9 +21,9 @@ $data = $resultado -> fetchAll();
         <table class='table' align='center' cellspacing='5em'>
             <thead>
                 <tr>
-                    <th><h2> Tienda </h2></th>";
+                    <th><h2><strong> Tienda </strong></h2></th>";
         if (True) {
-            echo "<th><h2> Visitar </h2></th>";
+            echo "<th><h2><strong> Visitar </strong></h2></th>";
         }
         echo "</tr>";
         foreach ($data as $d) {

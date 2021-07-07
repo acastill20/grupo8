@@ -21,31 +21,16 @@ $d = $data[0];
 <html style="background-color: #6495ed">
 
 
-<div align='center'>
-    <h1> Tienda </h1>
-</div>
-
-<div>
-    <?php
-        echo "<br><br>
-        <table align='center' cellspacing='5em'>
-            <thead>
-                <tr>
-                    <th><h2> Tienda </h2></th>
-                    <th><h2> Direccion </h2></th>
-                    <th><h2> Comuna </h2></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>$d[0]</td>
-                    <td>$d[1]</td>
-                    <td>$d[2]</td>
-                </tr>
-            </tbody>
-        </table>
-        ";
-    ?>
+<div class='column' style='width: 30%; margin-right: 30px'>
+    <div class='card'>
+        <div class='card-content'>
+            <div class='content'>
+                <h2><strong><?php echo ucwords($d[0]) ?></strong></h2>
+                <p><strong>Direccion: </strong><?php echo ucwords($d[1]) ?></p>
+                <p><strong>Comuna: </strong><?php echo ucwords($d[2]) ?></p>
+            </div>
+        </div>
+    </div>
 </div>
 <br>
 <br>

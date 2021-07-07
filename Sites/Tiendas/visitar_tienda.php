@@ -4,12 +4,7 @@ include('../templates/header.html');
 include('../consultas/navbar.php');
 require('../config/conexion.php');
 
-if (!isset($GLOBALS['tienda_elegida'])) {
-    $tienda_id = $_POST["tienda_elegida"];
-    $GLOBALS['tienda_elegida'] = $tienda_id;
-} elseif (isset($GLOBALS['tienda_elegida'])) {
-    $tienda_id = $GLOBALS['tienda_elegida'];
-}
+$tienda_id = $_POST["tienda_elegida"];
 
 $query = "
 SELECT tiendas.nombre, direcciones.direccion, comunas.nombre_comuna
@@ -69,6 +64,7 @@ $d = $data[0];
                 </h2>
 
                 <form action='' method='post'>
+                    <?php echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>" ?>
                     <input type='submit' name='submit_C1' value='Consultar' class='boton'>
                 </form>
             </div>
@@ -176,6 +172,7 @@ $d = $data[0];
                     <input type='text' name='texto_ingresado' placeholder='Ingresa un nombre'>
                     <br>
                     <br>
+                    <?php echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>" ?>
                     <input type='submit' name='submit_C2' value='Consultar' class='boton'>
                 </form>
             </div>
@@ -193,8 +190,8 @@ $d = $data[0];
                         $result21 = $db2 -> prepare($query21);
                         $result21 -> execute();
                         $data21 = $result21 -> fetchAll();
-                        echo '<br><br>
-                        <table class="table is-striped is-hoverable" align=\'center\' cellspacing=\'10em\'>
+                        echo "<br><br>
+                        <table class="table is-striped is-hoverable" align='center' cellspacing='10em'>
                             <thead>
                                 <tr>
                                     <th><h2> Nombre </h2></th>
@@ -203,7 +200,7 @@ $d = $data[0];
                                 </tr>
                             </thead>
                             <tbody>
-                            ';
+                            ";
                         foreach ($data21 as $d) {
                             echo "
                                 <tr>
@@ -242,6 +239,7 @@ $d = $data[0];
                         echo "<option value='$row[0]'>$row[0]</option>"; 
                     }
                     echo "</select>";
+                    echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>";
 
                     echo "<input type='submit' value='Buscar producto' name='submit_C3'>";
                 

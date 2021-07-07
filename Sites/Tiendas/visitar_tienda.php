@@ -52,15 +52,13 @@ $d = $data[0];
 <br>
 
 <div align='center'>
-    <table>
+    <table class="table is-fullwidth">
     <thead>
     <tr>
         <th>
             <!-- PUNTO 1 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <?php
-                echo "<p> ¿Cuáles son los productos más baratos de $d[0]? </p>"
-                ?>
+                <p> ¿Cuáles son los productos más baratos de esta tienda? </p>
                 <h2>
                 Pulsa el botón para ver los 3 productos<br />más baratos por <em>categoría</em>
                 </h2>
@@ -73,7 +71,6 @@ $d = $data[0];
             <div>
                 <?php
                     if (! empty($_POST['submit_C1'])){
-                        // CAMBIAR ID TIENDA
                         $query11 = "SELECT productos.id, productos.nombre, productos.precio 
                         FROM productos, vende
                         WHERE vende.id_tienda = $tienda_id
@@ -166,9 +163,7 @@ $d = $data[0];
         <th>
             <!-- PUNTO 2 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <?php
-                echo "<p> ¿Qué productos vende $d[0]? </p>"
-                ?>
+                <p> ¿Qué productos vende esta tienda? </p>
                 <h2>
                 Ingresa un <em>nombre</em> para ver<br />los productos con dicho nombre 
                 </h2>
@@ -184,7 +179,6 @@ $d = $data[0];
                 <?php
                     if (! empty($_POST['submit_C2'])){
                         $nombre_producto_ingresado = strtolower($_POST['texto_ingresado']);
-                        // CAMBIAR ID TIENDA
                         $query21 = "SELECT productos.nombre, productos.categoria, productos.descripcion
                         FROM productos, vende
                         WHERE vende.id_tienda = $tienda_id
@@ -225,9 +219,7 @@ $d = $data[0];
         <th>
             <!-- PUNTO 3 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <?php
-                echo "<p> ¿Qué quieres comprar en $d[0]? </p>"
-                ?>
+                <p> ¿Qué quieres comprar en esta tienda? </p>
                 <h2>
                     Escoge el <em>ID</em> del producto que te gustaría comprar
                 </h2>
@@ -268,7 +260,6 @@ $d = $data[0];
                         // echo $tid;
                         // echo $uid;
 
-                        // CAMBIAR ID TIENDA
                         $query32 = "SELECT generar_compra($prid, $tid, $uid);";
                         $result32 = $db2 -> prepare($query32);
                         $result32 -> execute();
@@ -330,7 +321,6 @@ $d = $data[0];
                             La tienda no vende este producto.<br />Intenta con otro ID.
                             </div>
                             </article>";
-                            // echo 'La tienda no vende este producto. Intenta con otro ID.';
                         }
                        
                         elseif ($opcion==1){
@@ -342,7 +332,6 @@ $d = $data[0];
                             La tienda no despacha a ninguna de las comunas de tus direcciones.
                             </div>
                             </article>";
-                            // echo 'La tienda no despacha a ninguna de las comunas de tus direcciones.';
                         }
                         
                         elseif ($opcion==2){
@@ -357,7 +346,6 @@ $d = $data[0];
                             ¡Se ha realizado con éxito tu compra!<br />Compra #$coid<br />Precio: $$precio<br />Envío con dirección a $nombre_direccion
                             </div>
                             </article>";
-                            // echo "¡Se ha realizado con éxito tu compra!<br />Compra #$coid<br />Precio: $$precio<br />Envío con dirección a $nombre_direccion";
                         }
                     }
                 ?>  

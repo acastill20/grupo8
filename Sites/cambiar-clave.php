@@ -1,7 +1,7 @@
 <?php 
 session_start();
 include('templates/header.html');
-include('templates/navbar.php');
+include('navbar.php');
 
 if (isset($_SESSION['rut']) || (isset($_GET['error']))) {
 

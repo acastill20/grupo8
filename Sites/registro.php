@@ -1,6 +1,6 @@
 <?php session_start();
 include('templates/header.html');   ?>
-<?php include('templates/navbar.php');
+<?php include('navbar.php');
 if (isset($_SESSION['rut'])){?>
   <article class="message is-danger">
   <div class="message-body">

@@ -133,110 +133,21 @@ if ($prod_categoria == 'comestible') {
                     <p><strong>Fecha de expiracion: </strong><?php echo $prod_fecha_expiracion ?></p>
                     <?php
                     if ($prod_sub_categoria == 'fresco') { ?>
-                        <p><strong>Duracion del producto: </strong><?php echo ucwords($prod_duracion_dias)?> Dias</p><?php
+                        <p><strong>Duracion del producto: </strong><?php echo ucwords($prod_duracion_dias) ?> Dias</p><?php
     
                     } elseif ($prod_sub_categoria == 'congelado') { ?>
                         <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?></p><?php
-                        
-                    } elseif ($prod_sub_categoria == 'conserva') {
-                        echo "<p><strong>Metodo de conserva: </strong>".ucwords($prod_metodo)." Dias</p>";
+
+                    } elseif ($prod_sub_categoria == 'conserva') { ?>
+                        <p><strong>Metodo de conserva: </strong><?php echo ucwords($prod_metodo) ?></p><?php
                     } 
-                } elseif ($prod_categoria == 'no comestible') {
-                    echo "<p><strong>Ancho: </strong>".ucwords($prod_ancho)." Dias</p>";
-                    echo "<p><strong>Largo: </strong>".ucwords($prod_largo)." Dias</p>";
-                    echo "<p><strong>Alto: </strong>".ucwords($prod_alto)." Dias</p>";
-                    echo "<p><strong>Peso: </strong>".ucwords($prod_peso)." Dias</p>";
-                }
-                ?>
+                } elseif ($prod_categoria == 'no comestible') { ?> 
+                    <p><strong>Ancho: </strong><?php echo ucwords($prod_ancho) ?> cm.</p>
+                    <p><strong>Largo: </strong><?php echo ucwords($prod_largo) ?> cm.</p>
+                    <p><strong>Alto: </strong><?php echo ucwords($prod_alto) ?> cm.</p>
+                    <p><strong>Peso: </strong><?php echo ucwords($prod_peso) ?> cm.</p><?php 
+                } ?> 
             </div>
         </div>
     </div>
 </div>
-
-
-
-<div>
-
-
-    <?php
-        // echo "<br><br>
-        // <table align='center' cellspacing='5em'>
-        //     <thead>
-        //         <tr>
-        //             <th><h2> ID </h2></th>
-        //             <th><h2> Nombre </h2></th>
-        //             <th><h2> Precio </h2></th>
-        //             <th><h2> Descripción </h2></th>
-        //             <th><h2> Categoría </h2></th>
-        //         </tr>
-        //     </thead>
-        //     <tbody>
-        //         <tr>
-        //             <td>$d1[0]</td>
-        //             <td>$d1[1]</td>
-        //             <td>$d1[2]</td>
-        //             <td>$d1[3]</td>
-        //             <td>$d1[4]</td>
-        //         </tr>
-        //     </tbody>
-        // </table>
-        // ";
-    ?>
-</div>
-
-
-<?php
-// if($d1[4]=='comestible'){
-//     $query21 = "
-//     SELECT productos_comestibles.fecha_expiracion, productos_comestibles.subcategoria
-//     FROM productos_comestibles
-//     WHERE productos_comestibles.id = $id_producto";
-//     $resultado21 = $db2 -> prepare($query21);
-//     $resultado21 -> execute();
-//     $data21 = $resultado21 -> fetchAll();
-//     $d21 = $data21[0];
-//     if($d21[1]=='congelado'){
-//         $query211 = "
-//         SELECT productos_congelados.peso
-//         FROM productos_congelados
-//         WHERE productos_congelados.id = $id_producto";
-//         $resultado211 = $db2 -> prepare($query211);
-//         $resultado211 -> execute();
-//         $data211 = $resultado211 -> fetchAll();
-//         $d211 = $data211[0];
-//     }
-//     elseif ($d21[1]=='conserva'){
-//         $query212 = "
-//         SELECT productos_conservas.metodo_conserva
-//         FROM productos_conservas
-//         WHERE productos_conservas.id = $id_producto";
-//         $resultado212 = $db2 -> prepare($query212);
-//         $resultado212 -> execute();
-//         $data212 = $resultado212 -> fetchAll();
-//         $d212 = $data212[0];
-//     }
-//     elseif ($d21[1]=='fresco'){
-//         $query213 = "
-//         SELECT productos_frescos.duracion_sin_refrigerar
-//         FROM productos_frescos
-//         WHERE productos_frescos.id = $id_producto";
-//         $resultado213 = $db2 -> prepare($query213);
-//         $resultado213 -> execute();
-//         $data213 = $resultado213 -> fetchAll();
-//         $d213 = $data213[0];
-//     }
-// }
-
-// elseif ($d1[4]=='no comestible'){
-//     $query22 = "
-//     SELECT productos_no_comestibles.ancho, productos_no_comestibles.largo, productos_no_comestibles.alto, productos_no_comestibles.peso
-//     FROM productos_no_comestibles
-//     WHERE productos_no_comestibles.id = $id_producto";
-//     $resultado22 = $db2 -> prepare($query22);
-//     $resultado22 -> execute();
-//     $data22 = $resultado22 -> fetchAll();
-//     $d22 = $data22[0];
-// }
-
-
-?>

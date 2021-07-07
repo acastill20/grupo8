@@ -101,7 +101,7 @@ if ($prod_categoria == 'comestible') {
     $prod_alto = $producto2[2];
     $prod_peso = $producto2[3];
 }
-
+echo 'aaaaaaaaaaaaaaaaaaaaaaaaa'
 echo $prod_nombre;
 echo $prod_precio;
 echo $prod_descripcion;

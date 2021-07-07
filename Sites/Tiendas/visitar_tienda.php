@@ -3,7 +3,13 @@ session_start();
 include('../templates/header.html');
 include('../consultas/navbar.php');
 require('../config/conexion.php');
-$tienda_id = $_POST["tienda_elegida"];
+
+if (!isset($GLOBALS['tienda_elegida'])) {
+    $tienda_id = $_POST["tienda_elegida"];
+    $GLOBALS['tienda_elegida'] = $tienda_id;
+} elseif (isset($GLOBALS['tienda_elegida'])) {
+    $tienda_id = $GLOBALS['tienda_elegida'];
+}
 
 $query = "
 SELECT tiendas.nombre, direcciones.direccion, comunas.nombre_comuna
@@ -46,6 +52,9 @@ $d = $data[0];
         ";
     ?>
 </div>
+<br>
+<br>
+<br>
 
 <div align='center'>
     <table>

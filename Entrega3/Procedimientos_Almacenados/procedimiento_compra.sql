@@ -114,4 +114,4 @@ $$ language plpgsql;
 
 
 
-SELECT direcciones.direccion FROM direcciones, direcciones_usuarios WHERE direcciones_usuarios.id_usuario = 0 AND direcciones_usuarios.id_direccion = direcciones.id;
+-- SELECT direcciones.direccion FROM direcciones, direcciones_usuarios WHERE direcciones_usuarios.id_usuario = 0 AND direcciones_usuarios.id_direccion = direcciones.id;

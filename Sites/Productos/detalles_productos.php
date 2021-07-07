@@ -13,7 +13,7 @@ FROM productos
 WHERE productos.id = $id_producto
 ;";
 
-$resultado1 = $db2 -> prepare($query);
+$resultado1 = $db2 -> prepare($query1);
 $resultado1 -> execute();
 $data1 = $resultado1 -> fetchAll();
 $producto1 = $data1[0];

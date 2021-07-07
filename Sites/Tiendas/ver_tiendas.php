@@ -1,4 +1,5 @@
 <?php
+session_start();
 require('../config/conexion.php');
 include('../templates/header.html');
 include('../templates/navbar.php');

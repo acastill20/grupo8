@@ -1,27 +1,106 @@
-<?php require('../config/conexion.php');
+<?php
+session_start();
+require('../config/conexion.php');
 include('../templates/header.html');
 include('../templates/navbar.php');
 
 # revisar cómo se guarda id producto en post
 $id_producto = $_POST['producto_elegido'];
 
-$query1 = "
-SELECT productos.id, productos.nombre, productos.precio, productos,descripcion, productos.categoria
+$query = "
+SELECT *
 FROM productos
 WHERE productos.id = $id_producto";
 
-$resultado1 = $db2 -> prepare($query1);
-$resultado1 -> execute();
-$data1 = $resultado1 -> fetchAll();
-$d1 = $data1[0];
+$resultado = $db2 -> prepare($query);
+$resultado -> execute();
+$data = $resultado -> fetchAll();
+$producto = $data[0];
+
+$categoria = $producto[4];
+if ($categoria == 'comestible') {
+    $query = "
+    SELECT *
+    FROM productos, productos_comestibles
+    WHERE productos.id = productos_comestibles.id
+    AND productos.id = $id_producto
+    ";
+    $resultado = $db2 -> prepare($query);
+    $resultado -> execute();
+    $data = $resultado -> fetchAll();
+    $producto = $data[0];
+
+    $sub_categoria = $producto[7];
+
+    if ($sub_categoria == 'fresco') {
+        $query = "
+        SELECT *
+        FROM productos, productos_comestibles, productos_frescos
+        WHERE productos.id = productos_comestibles.id
+        AND productos.id = productos_frescos.id
+        AND productos.id = $id_producto
+        ";
+        $resultado = $db2 -> prepare($query);
+        $resultado -> execute();
+        $data = $resultado -> fetchAll();
+        $producto = $data[0];        
+    } elseif ($sub_categoria == 'congelado') {
+        $query = "
+        SELECT *
+        FROM productos, productos_comestibles, productos_congelados
+        WHERE productos.id = productos_comestibles.id
+        AND productos.id = productos_congelados.id
+        AND productos.id = $id_producto
+        ";
+        $resultado = $db2 -> prepare($query);
+        $resultado -> execute();
+        $data = $resultado -> fetchAll();
+        $producto = $data[0];
+    } elseif  ($sub_categoria == 'conserva') {
+        $query = "
+        SELECT *
+        FROM productos, productos_comestibles, productos_conservas
+        WHERE productos.id = productos_comestibles.id
+        AND productos.id = productos_conservas.id
+        AND productos.id = $id_producto
+        ";
+        $resultado = $db2 -> prepare($query);
+        $resultado -> execute();
+        $data = $resultado -> fetchAll();
+        $producto = $data[0];
+    }
+} elseif ($categoria == 'no comestible') {
+    $query = "
+    SELECT *
+    FROM productos, productos_no_comestibles
+    WHERE productos.id = productos_no_comestibles.id
+    AND productos.id = $id_producto
+    ";
+    $resultado = $db2 -> prepare($query);
+    $resultado -> execute();
+    $data = $resultado -> fetchAll();
+    $producto = $data[0];
+}
+
 ?>
 
-
-<div align='center'>
-    <h1> Producto </h1>
+<div class="column" style="width: 30%; margin-right: 30px">
+    <div class="card">
+        <div class="card-content">
+            <div class="content">
+                <h2><strong><?php $producto[1] ?></strong></h2>
+                <p><strong>Nombre:</strong> <?php echo ucwords($_SESSION['nombre'])?></p>
+                <p><strong>Rut:</strong> <?php echo $_SESSION['rut'] ?></p>
+                <p><strong>Edad:</strong> <?php echo $_SESSION['edad'] ?></p>
+                <p><strong>Dirección:</strong> <?php echo ucwords($_SESSION['direccion']) ?>, <?php echo ucwords($_SESSION['comuna']) ?></p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div>
+
+
     <?php
         echo "<br><br>
         <table align='center' cellspacing='5em'>

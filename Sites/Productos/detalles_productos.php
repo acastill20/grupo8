@@ -7,91 +7,107 @@ include('../templates/navbar.php');
 # revisar cómo se guarda id producto en post
 $id_producto = $_POST['producto_elegido'];
 
-$query = "
+$query1 = "
 SELECT *
 FROM productos
-WHERE productos.id = $id_producto";
+WHERE productos.id = $id_producto
+;";
 
-$resultado = $db2 -> prepare($query);
-$resultado -> execute();
-$data = $resultado -> fetchAll();
-$producto = $data[0];
+$resultado1 = $db2 -> prepare($query);
+$resultado1 -> execute();
+$data1 = $resultado1 -> fetchAll();
+$producto1 = $data1[0];
 
-$categoria = $producto[4];
-if ($categoria == 'comestible') {
-    $query = "
-    SELECT *
+$prod_nombre = $producto1[1];
+$prod_precio = $producto1[2];
+$prod_descripcion = $producto1[3];
+$prod_categoria = $producto[4];
+
+if ($prod_categoria == 'comestible') {
+    $query2 = "
+    SELECT productos_comestibles.fecha_expiracion, productos_comestibles.subcategoria
     FROM productos, productos_comestibles
     WHERE productos.id = productos_comestibles.id
     AND productos.id = $id_producto
-    ";
-    $resultado = $db2 -> prepare($query);
-    $resultado -> execute();
-    $data = $resultado -> fetchAll();
-    $producto = $data[0];
+    ;";
 
-    $sub_categoria = $producto[7];
+    $resultado2 = $db2 -> prepare($query2);
+    $resultado2 -> execute();
+    $data2 = $resultado2 -> fetchAll();
+    $producto2 = $data2[0];
 
-    if ($sub_categoria == 'fresco') {
-        $query = "
-        SELECT *
+    $prod_fecha_expiracion = $producto2[0];
+    $prod_sub_categoria = $producto2[1];
+
+    if ($prod_sub_categoria == 'fresco') {
+        $query3 = "
+        SELECT productos_frescos.duracion_dias
         FROM productos, productos_comestibles, productos_frescos
         WHERE productos.id = productos_comestibles.id
         AND productos.id = productos_frescos.id
         AND productos.id = $id_producto
-        ";
-        $resultado = $db2 -> prepare($query);
-        $resultado -> execute();
-        $data = $resultado -> fetchAll();
-        $producto = $data[0];        
-    } elseif ($sub_categoria == 'congelado') {
-        $query = "
-        SELECT *
+        ;";
+        $resultado3 = $db2 -> prepare($query3);
+        $resultado3 -> execute();
+        $data3 = $resultado3 -> fetchAll();
+        $producto3 = $data3[0];
+
+        $prod_duracion_dias = $producto3[0];
+
+    } elseif ($prod_sub_categoria == 'congelado') {
+        $query3 = "
+        SELECT productos_congelados.peso
         FROM productos, productos_comestibles, productos_congelados
         WHERE productos.id = productos_comestibles.id
         AND productos.id = productos_congelados.id
         AND productos.id = $id_producto
-        ";
-        $resultado = $db2 -> prepare($query);
-        $resultado -> execute();
-        $data = $resultado -> fetchAll();
-        $producto = $data[0];
-    } elseif  ($sub_categoria == 'conserva') {
-        $query = "
+        ;";
+        $resultado3 = $db2 -> prepare($query3);
+        $resultado3 -> execute();
+        $data3 = $resultado3 -> fetchAll();
+        $producto3 = $data3[0];
+
+        $prod_peso = $producto3[0];
+
+    } elseif ($prod_sub_categoria == 'conserva') {
+        $query3 = "
         SELECT *
         FROM productos, productos_comestibles, productos_conservas
         WHERE productos.id = productos_comestibles.id
         AND productos.id = productos_conservas.id
         AND productos.id = $id_producto
-        ";
-        $resultado = $db2 -> prepare($query);
-        $resultado -> execute();
-        $data = $resultado -> fetchAll();
-        $producto = $data[0];
+        ;";
+        $resultado3 = $db2 -> prepare($query3);
+        $resultado3 -> execute();
+        $data3 = $resultado3 -> fetchAll();
+        $producto3 = $data3[0];
+
+        $prod_metodo = $producto3[0];
     }
-} elseif ($categoria == 'no comestible') {
-    $query = "
-    SELECT *
+} elseif ($prod_categoria == 'no comestible') {
+    $query2 = "
+    SELECT productos_no_comestibles.ancho, productos_no_comestibles.largo, productos_no_comestibles.alto, productos_no_comestibles.peso
     FROM productos, productos_no_comestibles
     WHERE productos.id = productos_no_comestibles.id
     AND productos.id = $id_producto
-    ";
-    $resultado = $db2 -> prepare($query);
-    $resultado -> execute();
-    $data = $resultado -> fetchAll();
-    $producto = $data[0];
-}
+    ;";
+    $resultado2 = $db2 -> prepare($query2);
+    $resultado2 -> execute();
+    $data2 = $resultado2 -> fetchAll();
+    $producto2 = $data2[0];
 
+    $prod_ancho = $producto2[0];
+    $prod_largo = $producto2[1];
+    $prod_alto = $producto2[2];
+    $prod_peso = $producto2[3];
+}
 ?>
-<?php
-foreach ($producto as $p) {
-    echo $p;
-} ?>
+
 <div class="column" style="width: 30%; margin-right: 30px">
     <div class="card">
         <div class="card-content">
             <div class="content">
-                <h2><strong><?php $producto[1]?></strong></h2>
+                <h2><strong><?php $prod_nombre?></strong></h2>
                 <p><strong>Nombre:</strong> <?php echo ucwords($_SESSION['nombre'])?></p>
                 <p><strong>Rut:</strong> <?php echo $_SESSION['rut'] ?></p>
                 <p><strong>Edad:</strong> <?php echo $_SESSION['edad'] ?></p>

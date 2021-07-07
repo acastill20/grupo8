@@ -1,5 +1,5 @@
 <body>
-
+<!-- pondría ../ en templates y todos los .php al mismo nivel de index (iniciar_sesion,...) -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="index.php">

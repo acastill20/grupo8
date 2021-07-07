@@ -35,7 +35,7 @@ $data = $resultado -> fetchAll();
                     <td> $d[1]</td>
                     <td> $d[0]</td>
             ";
-            if (true) {
+            if (isset($_SESSION['rut'])) {
                 echo "
                 <td>
                 <form action='visitar_tienda.php' method='post' align='center'>

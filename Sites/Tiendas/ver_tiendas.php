@@ -30,9 +30,8 @@ $data = $resultado -> fetchAll();
             <div class='message-body'>
               Debes iniciar sesión para visitar las tiendas.
             </div>
-          </article>"
-        }
-        else{
+          </article>";
+        } else {
             echo "<th><h2><strong> Visitar </strong></h2></th>";
         }
         echo "</tr>";

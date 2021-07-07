@@ -21,7 +21,7 @@ $d = $data[0];
 <html style="background-color: #6495ed">
 
 
-<div class='column' style='width: 30%; margin-right: 30px'>
+<div class='column' style='width: 30%; margin-right: 30px' align='center'>
     <div class='card'>
         <div class='card-content'>
             <div class='content'>

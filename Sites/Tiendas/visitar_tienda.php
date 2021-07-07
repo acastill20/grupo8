@@ -206,6 +206,7 @@ $d = $data[0];
                                     <th><h2> Nombre </h2></th>
                                     <th><h2> Categoría </h2></th>
                                     <th><h2> Descripción </h2></th>
+                                    <th><h2> Ver detalles </h2></th>
                                 </tr>
                             </thead>
                             <tbody>

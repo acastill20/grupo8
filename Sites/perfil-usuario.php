@@ -1,7 +1,10 @@
-<?php session_start();
-include('templates/header.html');   ?>
-<?php include('templates/navbar.php'); ?>
-<?php require('config/conexion.php');?>
+<?php 
+session_start();
+include('templates/header.html');
+include('navbar.php');
+require('config/conexion.php');
+?>
+
 <html style="background-color: #6495ed">
 <?php if (!isset($_SESSION['rut'])){?>
     <article class="message is-danger">

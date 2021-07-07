@@ -107,7 +107,7 @@ if ($prod_categoria == 'comestible') {
     <div class="card">
         <div class="card-content">
             <div class="content">
-                <h2><strong><?php echo ucwords($prod_nombre) ?></strong></h2>
+                <h2><strong>AAAAAA<?php // echo ucwords($prod_nombre) ?></strong></h2>
                 <p><strong>Nombre:</strong> <?php echo ucwords($_SESSION['nombre'])?></p>
                 <p><strong>Rut:</strong> <?php echo $_SESSION['rut'] ?></p>
                 <p><strong>Edad:</strong> <?php echo $_SESSION['edad'] ?></p>

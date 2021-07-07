@@ -5,7 +5,7 @@ if ($_SESSION['comienzo'] == null){
     exit();
 } ?>
 
-<?php include('templates/navbar.php');   ?>
+<?php include('navbar.php');   ?>
 <?php include('templates/header.html');   ?>
 <html style="background-color: #6495ed">
 <?php

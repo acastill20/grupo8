@@ -75,9 +75,7 @@ BEGIN
     FROM compras;
 
     -- did
-    SELECT INTO did 
-    direcciones.id
-    FROM (
+    SELECT * INTO did FROM (
         SELECT direcciones.id
         FROM direcciones, comunas, despacha_a
         WHERE direcciones.id_comuna = comunas.id
@@ -90,7 +88,7 @@ BEGIN
         FROM direcciones, direcciones_usuarios
         WHERE direcciones.id = direcciones_usuarios.id_direccion
         AND direcciones_usuarios.id_usuario = id_usuario_fijado
-        LIMIT 1);
+        LIMIT 1) AS foo;
 
     -- nombre dirección
     SELECT INTO nombre_direccion

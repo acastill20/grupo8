@@ -58,9 +58,11 @@ $d = $data[0];
         <th>
             <!-- PUNTO 1 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <p> ¿Cuáles son los productos más baratos de {nombre tienda}? </p>
+                <?php
+                echo "<p> ¿Cuáles son los productos más baratos de $d[0]? </p>"
+                ?>
                 <h2>
-                Pulsa el botón para ver los 3 productos más baratos por <em>categoría</em>
+                Pulsa el botón para ver los 3 productos<br />más baratos por <em>categoría</em>
                 </h2>
 
                 <form action='' method='post'>
@@ -164,9 +166,11 @@ $d = $data[0];
         <th>
             <!-- PUNTO 2 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <p> ¿Qué productos vende {nombre tienda}? </p>
+                <?php
+                echo "<p> ¿Qué productos vende $d[0]? </p>"
+                ?>
                 <h2>
-                Ingresa un <em>nombre</em> para ver los productos con dicho nombre 
+                Ingresa un <em>nombre</em> para ver<br />los productos con dicho nombre 
                 </h2>
                 <form action='' method='post'>
                     <input type='text' name='texto_ingresado' placeholder='Ingresa un nombre'>
@@ -221,7 +225,9 @@ $d = $data[0];
         <th>
             <!-- PUNTO 3 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <p> ¿Qué quieres comprar en {nombre tienda}? </p>
+                <?php
+                echo "<p> ¿Qué quieres comprar en $d[0]? </p>"
+                ?>
                 <h2>
                     Escoge el <em>ID</em> del producto que te gustaría comprar
                 </h2>

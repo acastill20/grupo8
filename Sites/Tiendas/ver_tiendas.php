@@ -23,6 +23,7 @@ $data = $resultado -> fetchAll();
         <table class='table' align='center' cellspacing='5em'>
             <thead>
                 <tr>
+                    <th><h2><strong> ID </strong></h2></th>
                     <th><h2><strong> Tienda </strong></h2></th>";
         if (True) {
             echo "<th><h2><strong> Visitar </strong></h2></th>";
@@ -31,7 +32,8 @@ $data = $resultado -> fetchAll();
         foreach ($data as $d) {
             echo "
                 <tr>
-                    <td> $d[0] $d[1]</td>
+                    <td> $d[1]</td>
+                    <td> $d[0]</td>
             ";
             if (true) {
                 echo "

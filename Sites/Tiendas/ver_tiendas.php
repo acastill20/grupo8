@@ -25,10 +25,18 @@ $data = $resultado -> fetchAll();
                 <tr>
                     <th><h2><strong> ID </strong></h2></th>
                     <th><h2><strong> Tienda </strong></h2></th>";
-        if (True) {
+        if(!isset($_SESSION['rut'])) {
+            echo "<article class='message is-danger'>
+            <div class='message-body'>
+              Debes iniciar sesión para visitar las tiendas.
+            </div>
+          </article>"
+        }
+        else{
             echo "<th><h2><strong> Visitar </strong></h2></th>";
         }
         echo "</tr>";
+
         foreach ($data as $d) {
             echo "
                 <tr>
@@ -53,3 +61,4 @@ $data = $resultado -> fetchAll();
             ";
     ?>
 </div>
+

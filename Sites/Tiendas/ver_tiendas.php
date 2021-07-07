@@ -18,7 +18,7 @@ $data = $resultado -> fetchAll();
 <div>
     <?php
         echo "<br><br>
-        <table align='center' cellspacing='5em'>
+        <table class='table' align='center' cellspacing='5em'>
             <thead>
                 <tr>
                     <th><h2> Tienda </h2></th>";

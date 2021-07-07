@@ -83,7 +83,10 @@ if ($categoria == 'comestible') {
 }
 
 ?>
-<?php echo $producto;?>
+<?php
+foreach ($producto as $p) {
+    echo $p;
+} ?>
 <div class="column" style="width: 30%; margin-right: 30px">
     <div class="card">
         <div class="card-content">

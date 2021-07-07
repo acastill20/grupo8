@@ -114,7 +114,7 @@ $d = $data[0];
                                 settype($d1[2], "STRING");
                                 echo "
                                     <tr>
-                                        <td><a href=\'detalles_productos.php?id_tienda=$d1[0]\' title='detalles_productos'> $d1[1] </a></td>
+                                        <td><a href=\'../Productos/detalles_productos.php?producto_elegido=$d1[0]\' title='detalles_productos'> $d1[1] </a></td>
                                         <td> $d1[2] </td>
                                     </tr>                        
                                 ";
@@ -141,7 +141,7 @@ $d = $data[0];
                                 settype($d2[2], "STRING");
                                 echo "
                                     <tr>
-                                        <td><a href=\'detalles_productos.php?id_tienda=$d2[0]\' title='detalles_productos'> $d2[1] </a></td>
+                                        <td><a href=\'../Productos/detalles_productos.php?producto_elegido=$d2[0]\' title='detalles_productos'> $d2[1] </a></td>
                                         <td> $d2[2] </td>
                                     </tr>                        
                                 ";
@@ -202,7 +202,7 @@ $d = $data[0];
                         foreach ($data21 as $d) {
                             echo "
                                 <tr>
-                                    <td><a href=\'detalles_productos.php?id_tienda=$d[3]\' title='detalles_productos'> $d[0] </a></td>
+                                    <td><a href=\'../Productos/detalles_productos.php?producto_elegido=$d[3]\' title='detalles_productos'> $d[0] </a></td>
                                     <td> $d[1] </td>
                                     <td> $d[2] </td>
                                 </tr>                        

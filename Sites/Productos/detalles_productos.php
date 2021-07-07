@@ -108,10 +108,6 @@ if ($prod_categoria == 'comestible') {
 }
 ?>
 
-$prod_precio = $producto1[2];
-$prod_descripcion = $producto1[3];
-$prod_categoria = $producto[4];
-
 <div class='column' style='width: 30%; margin-right: 30px'>
     <div class='card'>
         <div class='card-content'>
@@ -119,7 +115,7 @@ $prod_categoria = $producto[4];
                 <h2><strong><?php echo ucwords($prod_nombre) ?></strong></h2>
                 <p><strong>Precio:</strong><?php echo $prod_precio ?></p>
                 <p><strong>Descripcion:</strong><?php echo $prod_descripcion ?></p>
-                <p><strong>Categoria:</strong><?php echo $prod_categoria ?></p>
+                <p><strong>Categoria:</strong><?php echo ucwords($prod_categoria) ?></p>
             </div>
         </div>
     </div>

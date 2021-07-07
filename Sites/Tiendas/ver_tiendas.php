@@ -11,8 +11,10 @@ $data = $resultado -> fetchAll();
 ?>
 
 <html style="background-color: #6495ed">
+<br>
+<br>
 <div align='center'>
-    <h1> Ver todas las tiendas </h1>
+    <h1 class='is-size-1'> Ver todas las tiendas </h1>
 </div>
 
 <div>

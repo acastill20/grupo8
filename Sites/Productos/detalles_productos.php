@@ -21,7 +21,7 @@ $producto1 = $data1[0];
 $prod_nombre = $producto1[1];
 $prod_precio = $producto1[2];
 $prod_descripcion = $producto1[3];
-$prod_categoria = $producto[4];
+$prod_categoria = $producto1[4];
 
 // settype($prod_nombre, "STRING");
 // settype($prod_precio, "STRING");
@@ -116,6 +116,12 @@ if ($prod_categoria == 'comestible') {
                 <p><strong>Precio:</strong><?php echo $prod_precio ?></p>
                 <p><strong>Descripcion:</strong><?php echo $prod_descripcion ?></p>
                 <p><strong>Categoria:</strong><?php echo ucwords($prod_categoria) ?></p>
+                <?php
+                if ($prod_categoria == 'comestible') {
+                    echo "<p><strong>Sub-Categoria:</strong>$prod_sub_categoria</p>";
+                    echo "<p><strong>Fecha de expiracion:</strong>$prod_fecha_expiracion</p>";
+                }
+                ?>
             </div>
         </div>
     </div>

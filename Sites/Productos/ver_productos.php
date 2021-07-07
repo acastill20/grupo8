@@ -36,10 +36,12 @@ $data = $resultado -> fetchAll();
             if (true) {
                 echo "
                 <td>
-                <form action='detalles_productos.php' method='post' align='center'>
-                    <input type='hidden' value=$d[0] class='boton' name='producto_elegido'>
-                    <input type='submit' value='Visitar' class='boton'>
-                </form>
+                    <div class='boton_hover'>
+                        <form action='detalles_productos.php' method='post' align='center'>
+                            <input type='hidden' value=$d[0] class='boton' name='producto_elegido'>
+                            <input type='submit' value='Ver' class='boton'>
+                        </form>
+                    </div>
                 </td>
                 ";
             }

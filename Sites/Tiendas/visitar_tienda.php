@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../templates/header.html');
-include('../consultas/navbar.php');
+include('../templates/navbar.php');
 require('../config/conexion.php');
 
 $tienda_id = $_POST["tienda_elegida"];

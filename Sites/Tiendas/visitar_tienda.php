@@ -257,6 +257,7 @@ $d = $data[0];
                         echo "<option value='$row[0]'>$row[0]</option>"; 
                     }
                     echo "</select>";
+                    echo "<input type='number' class='boton' name='cantidad' min='1' max='50'>";
                     echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>";
 
                     echo "<input type='submit' value='Comprar producto' name='submit_C3'>";
@@ -271,12 +272,14 @@ $d = $data[0];
                         $prid = $_POST['id_producto'];
                         $tid = $tienda_id;
                         $uid = $_SESSION['id'];
+                        $cantidad = $_POST['cantidad'];
 
                         settype($prid, "INTEGER");
                         settype($tid, "INTEGER");
                         settype($uid, "INTEGER");
+                        settype($cantidad, "INTEGER");
 
-                        $query32 = "SELECT generar_compra($prid, $tid, $uid);";
+                        $query32 = "SELECT generar_compra($prid, $tid, $uid, $cantidad);";
                         $result32 = $db2 -> prepare($query32);
                         $result32 -> execute();
                         $data32 = $result32 -> fetchAll();

@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION
 
 -- declaramos la función y sus argumentos
-generar_compra (id_producto_ingresado INTEGER, id_tienda_ingresado INTEGER, id_usuario_fijado INTEGER)
+generar_compra (id_producto_ingresado INTEGER, id_tienda_ingresado INTEGER, id_usuario_fijado INTEGER, cantidad INTEGER)
 
 -- declaramos lo que retorna 
 -- RETURNS VARCHAR(250) AS $$
@@ -105,7 +105,7 @@ BEGIN
     ;
     
     INSERT INTO compras VALUES(coidmax + 1, id_usuario_fijado, did, id_tienda_ingresado);
-    INSERT INTO producto_comprado VALUES(coidmax + 1, id_producto_ingresado, 1);
+    INSERT INTO producto_comprado VALUES(coidmax + 1, id_producto_ingresado, cantidad);
     -- RETURN CONCAT('¡Se ha realizado con éxito tu compra!\nCompra #', (coidmax + 1), '\n', 'Precio total: ', precio, '\n', 'Envío con dirección ', nombre_direccion);
     RETURN 3;
 

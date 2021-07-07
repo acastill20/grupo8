@@ -19,7 +19,7 @@
         Comprar
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item" href="../Productos/ver_productos.php">
         Productos
       </a>
 

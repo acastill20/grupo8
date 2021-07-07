@@ -49,6 +49,7 @@ $d = $data[0];
                 <h2>
                 Pulsa el botón para ver los 3 productos<br />más baratos por <em>categoría</em>
                 </h2>
+                <br>
 
                 <form action='' method='post'>
                     <?php echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>" ?>
@@ -261,7 +262,6 @@ $d = $data[0];
                     echo "<br>Cantidad <br>";
                     echo "<input type='number' class='boton' name='cantidad' min='1' max='50'>";
                     echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>";
-                    echo "<br>";
                     echo "<br>";
                     echo "<br>";
                     echo "<input type='submit' value='Comprar producto' name='submit_C3'>";

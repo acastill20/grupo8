@@ -1,3 +1,22 @@
+# INFORME ENTREGA 3
+## Grupo 8
+- Andres Castillo
+- Beatriz Errázuriz
+## Grupo 149
+- Martín Orrego
+- Carolina Urtubia
+
+### Sobre asignacion de contraseñas
+Las contraseñas de los usuarios se realizo mediante un procedimiento almacenado ubicado en ```Entrega3/Procedimientos_Almacenados/insertar_usuario.sql```, todas las contraseñas aleatorias corresponden a numeros de 4 digitos, mas abajo se entrega la tabla completa de los usuarios con sus respectivos atributos y claves.
+
+### Consideraciones adicionales
+- En el caso de una compra v alida, la dirección a la que se envía el pedido es la primera tupla de la consulta de la línea 78 en ```procedimiento_compra.sql```. En este caso, sería la primera dirección asociada al id del usuario en la tabla direcciones_usuarios.
+- Nuestra pagina admite que las compras tengan una cantidad variable de un producto.
+- El traspaso de presonal administrativo en usuarios se realiza en ```Sites/sesion/procedimiento1.php```.
+
+
+### Tabla Usuarios
+
  id  |        nombre        |    rut     | edad |  sexo  | jefe | contrasena
 -----|----------------------|------------|------|--------|------|------------
    0 | oliver huff          | 18167947-6 |   47 | mujer  |    0 |       7341

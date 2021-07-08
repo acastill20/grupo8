@@ -105,7 +105,7 @@ require('config/conexion.php');
                                             <td> <?php echo $a[0] ?> </td>
                                             <td> <?php echo ucwords($a[1]) ?> </td>
                                             <td> <?php echo $a[2] ?> </td>
-                                            <td> $<?php echo $a[3] ?> </td>
+                                            <td> $<?php echo intval($a[2])*intval($a[3]) ?> </td>
                                             <td> <?php echo ucwords($a[4]) ?> </td>
                                             <td> <?php echo ucwords($a[5]) ?>, <?php echo ucwords($a[6]) ?> </td>
                                         </tr>

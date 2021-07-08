@@ -1,6 +1,11 @@
 <?php session_start();
 include('templates/header.html');   ?>
 <?php include('navbar.php');
+require('config/conexion.php');
+$query31 = "SELECT nombre_comuna FROM comunas";
+$result31 = $db2 -> prepare($query31);
+$result31 -> execute();
+$data31 = $result31 -> fetchAll();
 if (isset($_SESSION['rut'])){?>
   <article class="message is-danger">
   <div class="message-body">
@@ -64,8 +69,13 @@ if (isset($_SESSION['rut'])){?>
     </div>
     <div class="field" style="width: 300px">
       <label class="label">Comuna</label>
-      <div class="control">
-        <input class="input" type="text" name="comuna" placeholder="Ñuñoa">
+      <div class="select">
+        <select name="comuna">
+          <option>Selecciona tu comuna</option>
+          <?php foreach ($data31 as $row){ ?>
+            <option value='<?php echo $row[0] ?>'><?php echo ucwords($row[0]) ?></option> 
+          <?php } ?>
+        </select>
       </div>
     </div>
     <div class="field" style="width: 300px">
@@ -79,7 +89,7 @@ if (isset($_SESSION['rut'])){?>
       <input type="submit" class="button is-success" value="Registrarme">
     </div>
     <?php } ?>
-    </div>
+  </div>
   </form>
 </body>
 </html>

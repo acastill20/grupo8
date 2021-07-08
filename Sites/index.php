@@ -1,4 +1,5 @@
-<?php session_start();?>
+<?php session_start();
+include('templates/header.html');   ?>
 <?php
 if ($_SESSION['comienzo'] == null){
     echo '<script>window.location="sesion/procedimiento1.php"</script>';
@@ -36,7 +37,7 @@ if($_SESSION['rut'] == null || $_SESSION['rut'] == '') {?>
                         <a class="button cta is-rounded primary-btn raised" href="registro.php">
                             Registrate
                         </a>
-                        <a class="button cta is-rounded" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <a class="button cta is-rounded" href="https://www.youtube.com/watch?v=FavUpD_IjVY">
                             Un regalo de parte del equipo
                         </a>
                     </div>

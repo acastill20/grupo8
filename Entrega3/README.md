@@ -7,12 +7,18 @@
 - Carolina Urtubia
 
 ### Sobre asignacion de contraseñas
-Las contraseñas de los usuarios se realizo mediante un procedimiento almacenado ubicado en ```Entrega3/Procedimientos_Almacenados/insertar_usuario.sql```, todas las contraseñas aleatorias corresponden a numeros de 4 digitos, mas abajo se entrega la tabla completa de los usuarios con sus respectivos atributos y claves.
+Las contraseñas de los usuarios se realizo mediante un procedimiento almacenado ubicado en ```Entrega3/Procedimientos_Almacenados/insertar_usuario.sql```, todas las contraseñas aleatorias corresponden a números de 4 dígitos, mas abajo se entrega la tabla completa de los usuarios con sus respectivos atributos y claves. \
+Solo están permitidas contraseñas numéricas al momento de registrarse y/o modificar una ya existente.
+
+### Funcionalidad adicional
+En el menú de las tiendas (botón Comprar), existe una columna que indica si la tienda puede realizar despachos a alguna de tus direcciones. \
+Además, nuestra página admite compras de más de un producto, con un límite de 50.
 
 ### Consideraciones adicionales
-- En el caso de una compra v alida, la dirección a la que se envía el pedido es la primera tupla de la consulta de la línea 78 en ```procedimiento_compra.sql```. En este caso, sería la primera dirección asociada al id del usuario en la tabla direcciones_usuarios.
-- Nuestra pagina admite que las compras tengan una cantidad variable de un producto.
+- En el caso de una compra válida, la dirección a la que se envía el pedido es la primera tupla de la consulta de la línea 78 en ```procedimiento_compra.sql```. En este caso, sería la primera dirección asociada al id del usuario en la tabla direcciones_usuarios.
 - El traspaso de presonal administrativo en usuarios se realiza en ```Sites/sesion/procedimiento1.php```.
+- Utilizar botones del sitio para retroceder de página, por favor **NO usar las flechas del navegador**. En caso de presentar problemas por esto, actualizar la página.
+- Nuestra página incluye música de fondo en el index, si no pueden escucharla considerar que el navegador puede estar bloqueando el acceso a audio por lo que deben permitirlo para disfrutar de la experiencia de DCCowShop.
 
 
 ### Tabla Usuarios

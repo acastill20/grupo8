@@ -300,14 +300,20 @@ $d = $data[0];
                         $data33 = $result33 -> fetchAll();
                         $coid = $data33[0][0];
 
-                        $query34 = "SELECT productos.precio
+                        $query34 = "SELECT productos.precio, productos.nombre
                         FROM productos
                         WHERE productos.id = $prid
                         ;";
                         $result34 = $db2 -> prepare($query34);
                         $result34 -> execute();
                         $data34 = $result34 -> fetchAll();
-                        $precio = $data34[0][0];
+                        $precio_unitario = $data34[0][0];
+                        $nombre_producto = $data34[0][1];
+
+                        settype($cantidad, "INTEGER");
+                        settype($precio_unitario, "INTEGER");
+
+                        $precio = $cantidad * $precio_unitario;
 
 
                         $query35 = "SELECT direcciones.id
@@ -368,7 +374,9 @@ $d = $data[0];
                                 <p>Boleta electrónica</p>
                             </div>
                             <div class='message-body'>
-                            ¡Se ha realizado con éxito tu compra!<br />Compra #$coid<br />Precio: $$precio<br />Envío con dirección a ucwords($nombre_direccion)
+                            ¡Se ha realizado con éxito tu compra de <?php echo $nombre_producto?>!<br />Compra #<?php echo $coid ?>
+                            <br />Precio unidad: $<?php echo $precio_unitario?><br />Cantidad: <?php echo $cantidad?>
+                            <br />Precio total: $<?php echo $precio?><br />Envío con dirección a <?php echo ucwords($nombre_direccion) ?>
                             </div>
                             </article>
                         <?php }

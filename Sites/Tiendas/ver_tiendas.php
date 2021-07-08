@@ -8,6 +8,7 @@ $query = "SELECT tiendas.nombre, tiendas.id FROM tiendas;";
 $resultado = $db2 -> prepare($query);
 $resultado -> execute();
 $data = $resultado -> fetchAll();
+
 ?>
 
 <html style="background-color: #6495ed">
@@ -17,7 +18,7 @@ $data = $resultado -> fetchAll();
 <div align='center'>
     <h1 class='is-size-1'> Nuestras tiendas ! </h1>
 </div>
-</div
+</div>
 
 <div>
     <?php
@@ -34,7 +35,8 @@ $data = $resultado -> fetchAll();
             </div>
           </article>";
         } else {
-            echo "<th><h2><strong> Visitar </strong></h2></th>";
+            echo "<th><h2><strong> Despacho a<br />tu comuna </strong></h2></th>
+            <th><h2><strong> Visitar </strong></h2></th>";
         }
         echo "</tr>";
 
@@ -45,7 +47,31 @@ $data = $resultado -> fetchAll();
                     <td>" ?> <?php echo ucwords($d[0]) ?> </td>
             <?php ;
             if (isset($_SESSION['rut'])) {
+                $uid = $_SESSION['id'];
+                $query1 = "SELECT direcciones.id
+                FROM direcciones, comunas, despacha_a
+                WHERE direcciones.id_comuna = comunas.id
+                AND comunas.id = despacha_a.id_comuna
+                AND despacha_a.id_tienda = $d[1]
+
+                INTERSECT
+
+                SELECT direcciones.id
+                FROM direcciones, direcciones_usuarios
+                WHERE direcciones.id = direcciones_usuarios.id_direccion
+                AND direcciones_usuarios.id_usuario = $uid";
+                $resultado1 = $db2 -> prepare($query1);
+                $resultado1 -> execute();
+                $data1 = $resultado1 -> fetchAll();
+                $despacha_a = '';
+                if (is_null($data1[0])){
+                    $despacha_a = 'No';
+                } else{
+                    $despacha_a ='Sí';
+                }
+
                 echo "
+                <td> $despacha_a </td>
                 <td>
                 <form action='visitar_tienda.php' method='post' align='center'>
                     <input type='hidden' value=$d[1] class='button is-info' name='tienda_elegida'>

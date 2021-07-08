@@ -156,5 +156,5 @@ if ($prod_categoria == 'comestible') {
         </div>
     </div>
     <br>
-    <a class='button is-primary' href="javascript:history.back()">Volver</a>
+    <a class='button is-primary' href="ver_tiendas.php">Volver al listado de tiendas</a>
 </div>

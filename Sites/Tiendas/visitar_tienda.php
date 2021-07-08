@@ -22,7 +22,7 @@ $d = $data[0];
 
 
 <div align='center'>
-    <div class='column' style='width: 30%; margin-right: 30px'>
+    <div class='column' style='width: 30%'>
         <div class='card'>
             <div class='card-content'>
                 <div class='content'>
@@ -35,7 +35,11 @@ $d = $data[0];
     </div>
 </div>
 <br>
-<br>
+<div align='center'> 
+<a class="button cta is-primary is-rounded primary-btn raised" href="ver_tiendas.php">
+    Volver a la lista de tiendas
+</a>
+</div>
 <br>
 
 <div align='center'>
@@ -45,7 +49,7 @@ $d = $data[0];
         <th>
             <!-- PUNTO 1 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <p> ¿Cuáles son los productos más baratos de esta tienda? </p>
+                <p class="title is-4"> ¿Cuáles son los productos más baratos de esta tienda? </p>
                 <h2>
                 Pulsa el botón para ver los 3 productos<br />más baratos por <em>categoría</em>
                 </h2>
@@ -53,7 +57,7 @@ $d = $data[0];
 
                 <form action='' method='post'>
                     <?php echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>" ?>
-                    <input type='submit' name='submit_C1' value='Consultar' class='boton'>
+                    <input type='submit' name='submit_C1' value='Consultar' class="button is-link">
                 </form>
             </div>
             <div>
@@ -92,7 +96,7 @@ $d = $data[0];
                         <br><br>
                             <table class='table is-striped is-hoverable' align='center' cellspacing='10em'>
                                 <thead>
-                                    <tr>
+                                    <tr class='is-selected'>
                                         <th><h2> ID </h2></th>
                                         <th><h2> Comestibles </h2></th>
                                         <th><h2> Precio </h2></th>
@@ -102,23 +106,22 @@ $d = $data[0];
                                 <tbody>
                         ";
                         foreach ($data11 as $d1) {
-                            settype($d1[2], "STRING");
-                            
-                            echo "
-                                <tr>
-                                    <td>$d1[0]</td>
-                                    <td>$d1[1]</td>
-                                    <td>$d1[2]</td>
-                                    <td>
-                                        <div>
-                                            <form action='../Productos/detalles_productos.php' method='post' align='center'>
-                                                <input type='hidden' value=$d1[0] class='boton' name='producto_elegido'>
-                                                <input type='submit' value='Ver' class='boton'>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>                        
-                            ";
+                            settype($d1[2], "STRING"); ?>
+
+                            <tr>
+                                <td><?php echo ucfirst($d1[0]) ?></td>
+                                <td><?php echo ucfirst($d1[1]) ?></td>
+                                <td>$<?php echo ucfirst($d1[2]) ?></td>
+                                <td>
+                                    <div>
+                                        <form action='detalles_productos.php' method='post' align='center'>
+                                            <input type='hidden' value=<?php echo $d1[0] ?> class='boton' name='producto_elegido'>
+                                            <input type='submit' value='Ver' class='button is-info is-small'>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>                        
+                            <?php ;
                             }
                             echo '
                                 </tbody>
@@ -127,11 +130,12 @@ $d = $data[0];
                             
                             '</th>
                             <th>';
-                            // COLUMNA (TABLA) NO COMESTIBLES
-                            echo '<br><br>
+                            // COLUMNA (TABLA) NO COMESTIBLES ?>
+                            <br>
+                            <br>
                             <table class="table is-striped is-hoverable" align=\'center\' cellspacing=\'10em\'>
                                 <thead>
-                                    <tr>
+                                    <tr class='is-selected'>
                                     <th><h2> ID </h2></th>
                                     <th><h2> No Comestibles </h2></th>
                                     <th><h2> Precio </h2></th>
@@ -139,24 +143,22 @@ $d = $data[0];
                                     </tr>
                                 </thead>
                                 <tbody>
-                                ';
-                            foreach ($data12 as $d2) {
-                                settype($d2[2], "STRING");
-                                echo "
+                            <?php foreach ($data12 as $d2) {
+                                settype($d2[2], "STRING"); ?>
                                 <tr>
-                                    <td>$d2[0]</td>
-                                    <td>$d2[1]</td>
-                                    <td>$d2[2]</td>
+                                    <td><?php echo ucfirst($d2[0]) ?></td>
+                                    <td><?php echo ucfirst($d2[1]) ?></td>
+                                    <td>$<?php echo ucfirst($d2[2]) ?></td>
                                     <td>
                                         <div>
-                                            <form action='../Productos/detalles_productos.php' method='post' align='center'>
-                                                <input type='hidden' value=$d2[0] class='boton' name='producto_elegido'>
-                                                <input type='submit' value='Ver' class='boton'>
+                                            <form action='detalles_productos.php' method='post' align='center'>
+                                                <input type='hidden' value=<?php echo $d2[0] ?> class='boton' name='producto_elegido'>
+                                                <input type='submit' value='Ver' class='button is-info is-small'>
                                             </form>
                                         </div>
                                     </td>
-                                </tr> "; 
-                            }
+                                </tr> 
+                            <?php }
                             echo '
                                 </tbody>
                             </table>
@@ -174,16 +176,16 @@ $d = $data[0];
         <th>
             <!-- PUNTO 2 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <p> ¿Qué productos vende esta tienda? </p>
-                <h2>
+                <p class="title is-4"> ¿Qué productos vende esta tienda? </p>
+                <h2 style="margin-bottom: 2%">
                 Ingresa un <em>nombre</em> para ver<br />los productos con dicho nombre 
                 </h2>
                 <form action='' method='post'>
-                    <input type='text' name='texto_ingresado' placeholder='Ingresa un nombre'>
+                    <input type='text' name='texto_ingresado' placeholder='Ingresa un nombre' class="input is-small">
                     <br>
                     <br>
                     <?php echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>" ?>
-                    <input type='submit' name='submit_C2' value='Consultar' class='boton'>
+                    <input type='submit' name='submit_C2' value='Consultar' class="button is-link">
                 </form>
             </div>
             <div>
@@ -202,7 +204,7 @@ $d = $data[0];
                         echo "<br><br>
                         <table class='table is-striped is-hoverable' align='center' cellspacing='10em'>
                             <thead>
-                                <tr>
+                                <tr class='is-selected'>
                                     <th><h2> ID </h2></th>
                                     <th><h2> Nombre </h2></th>
                                     <th><h2> Categoría </h2></th>
@@ -212,23 +214,22 @@ $d = $data[0];
                             </thead>
                             <tbody>
                             ";
-                        foreach ($data21 as $d) {
-                            echo "
+                        foreach ($data21 as $d) { ?>
                             <tr>
-                                <td>$d[3]</td>
-                                <td>$d[0]</td>
-                                <td>$d[1]</td>
-                                <td>$d[2]</td>
+                                <td><?php echo $d[3] ?></td>
+                                <td><?php echo ucfirst($d[0]) ?></td>
+                                <td><?php echo ucwords($d[1]) ?></td>
+                                <td><?php echo ucfirst($d[2]) ?></td>
                                 <td>
                                     <div>
                                         <form action='../Productos/detalles_productos.php' method='post' align='center'>
-                                            <input type='hidden' value=$d[3] class='boton' name='producto_elegido'>
-                                            <input type='submit' value='Ver' class='boton'>
+                                            <input type='hidden' value=<?php echo $d[3] ?> class='boton' name='producto_elegido'>
+                                            <input type='submit' value='Ver' class='button is-info is-small is-rounded'>
                                         </form>
                                     </div>
                                 </td>
-                            </tr> ";
-                        }
+                            </tr>
+                        <?php }
                         echo '
                             </tbody>
                         </table>
@@ -240,7 +241,7 @@ $d = $data[0];
         <th>
             <!-- PUNTO 3 PÁGINA DE COMPRAS -->
             <div align='center'>
-                <p> ¿Qué quieres comprar en esta tienda? </p>
+                <p class="title is-4"> ¿Qué quieres comprar en esta tienda? </p>
                 <h2>
                     Escoge el <em>ID</em> del producto que te gustaría comprar
                 </h2>
@@ -252,19 +253,21 @@ $d = $data[0];
                     $result31 -> execute();
                     $data31 = $result31 -> fetchAll();
                     echo "<br>ID Producto<br>";
+                    echo "<div class='select'>";
                     echo "<select name = 'id_producto'>";
                     foreach ($data31 as $row){
                         echo $row[0];
                         echo "<option value='$row[0]'>$row[0]</option>"; 
                     }
                     echo "</select>";
+                    echo "</div>";
                     echo "<br>";
                     echo "<br>Cantidad <br>";
                     echo "<input type='number' class='boton' name='cantidad' min='1' max='50' value='1'>";
                     echo "<input type='hidden' value=$tienda_id class='boton' name='tienda_elegida'>";
                     echo "<br>";
                     echo "<br>";
-                    echo "<input type='submit' value='Comprar producto' name='submit_C3'>";
+                    echo "<input type='submit' value='Comprar producto' name='submit_C3' class='button is-link'>";
                 
                 echo "</form>";
                 ?>
@@ -357,8 +360,7 @@ $d = $data[0];
                             </article>";
                         }
                         
-                        elseif ($opcion==3){
-                            echo"
+                        elseif ($opcion==3){ ?>
                             <br />
                             <br />
                             <article class='message is-primary'>
@@ -366,10 +368,10 @@ $d = $data[0];
                                 <p>Boleta electrónica</p>
                             </div>
                             <div class='message-body'>
-                            ¡Se ha realizado con éxito tu compra!<br />Compra #$coid<br />Precio: $$precio<br />Envío con dirección a $nombre_direccion
+                            ¡Se ha realizado con éxito tu compra!<br />Compra #$coid<br />Precio: $$precio<br />Envío con dirección a ucwords($nombre_direccion)
                             </div>
-                            </article>";
-                        }
+                            </article>
+                        <?php }
                     }
                 ?>  
             </div>
